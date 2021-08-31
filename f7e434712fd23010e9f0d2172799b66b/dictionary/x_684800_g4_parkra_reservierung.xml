@@ -21,7 +21,7 @@
                 <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true,encode_utf8=false" default="javascript:gs.getUserID();" dynamic_default_value="1d74ddf92f563010e9f0d2172799b62f" label="Usernummer" max_length="32" name="usernummer" read_only="true" reference="x_684800_g4_parkra_user" type="reference" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Usernummer" max_length="32" name="usernummer" read_only="true" reference="x_684800_g4_parkra_user" type="reference"/>
         <index name="index">
             <element name="parkzone"/>
         </index>
