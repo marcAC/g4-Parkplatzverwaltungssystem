@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element extends="sys_user" label="User" max_length="40" name="x_684800_g4_parkra_user" type="collection">
-        <element default="javascript:getNextObjNumberPadded()" display="true" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Benutzer_ID" max_length="40" name="benutzer_id" read_only="true" type="string" use_dynamic_default="true"/>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:getNextObjNumberPadded()" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Benutzer_ID" max_length="40" name="benutzer_id" read_only="true" type="string" use_dynamic_default="true"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
         <element choice="1" label="Rolle" max_length="40" name="rolle" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Externer" value="Externer"/>
