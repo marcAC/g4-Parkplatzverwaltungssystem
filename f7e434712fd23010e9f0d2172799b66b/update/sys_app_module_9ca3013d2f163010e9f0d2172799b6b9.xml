@@ -10,31 +10,31 @@
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title/>
+        <mobile_title>Zeige meine Fahrzeuge</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_684800_g4_parkra_fahrzeug</name>
         <order>400</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles/>
+        <roles>x_684800_g4_parkra.studierender,x_684800_g4_parkra.mitarbeiter,x_684800_g4_parkra.professor,x_684800_g4_parkra.gast,x_684800_g4_parkra.administrator,x_684800_g4_parkra.externer</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-08-31 11:18:02</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9ca3013d2f163010e9f0d2172799b6b9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_684800_g4_parkra_fahrzeug</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Zeige meine Fahrzeuge</sys_name>
         <sys_overrides/>
         <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
         <sys_policy/>
         <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
         <sys_update_name>sys_app_module_9ca3013d2f163010e9f0d2172799b6b9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-08-31 11:18:02</sys_updated_on>
+        <sys_updated_on>2021-08-31 11:33:27</sys_updated_on>
         <timeline_page/>
-        <title/>
+        <title>Zeige meine Fahrzeuge</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
