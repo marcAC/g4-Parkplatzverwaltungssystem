@@ -4,7 +4,9 @@
         <element label="Behinderung" max_length="40" name="behinderung" type="boolean"/>
         <element label="Bezahlt" max_length="40" name="bezahlt" type="boolean"/>
         <element label="Ende" max_length="40" name="ende" type="glide_date"/>
-        <element label="Parkzone" max_length="32" name="parkzone" reference="x_684800_g4_parkra_parkzone" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" choice="1" label="Parkzone" max_length="32" name="parkzone" reference="x_684800_g4_parkra_parkzone" type="reference">
+            <choice/>
+        </element>
         <element choice="1" default="javascript:getNextObjNumberPadded()" display="true" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Reservierungsnummer" max_length="40" name="reservierungsnummer" read_only="true" type="string" use_dynamic_default="true">
             <choice>
                 <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>

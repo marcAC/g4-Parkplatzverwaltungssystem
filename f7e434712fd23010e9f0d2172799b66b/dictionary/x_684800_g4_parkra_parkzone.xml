@@ -2,8 +2,8 @@
     <element label="Parkzone" max_length="40" name="x_684800_g4_parkra_parkzone" type="collection">
         <element label="Behindertenparkplaetze" max_length="40" name="behindertenparkplaetze" type="integer"/>
         <element label="Kapazität" max_length="40" name="kapazitat" type="integer"/>
-        <element label="Name" max_length="40" name="name" type="string"/>
+        <element display="true" label="Name" max_length="40" name="name" type="string"/>
         <element label="Preis" max_length="40" name="preis" type="float"/>
-        <element default="javascript:getNextObjNumberPadded()" display="true" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="P_ID" max_length="40" name="p_id" type="string" use_dynamic_default="true"/>
+        <element default="javascript:getNextObjNumberPadded()" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="P_ID" max_length="40" name="p_id" type="string" use_dynamic_default="true"/>
     </element>
 </database>
