@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Reservierung" max_length="40" name="x_684800_g4_parkra_reservierung" type="collection">
+        <element choice="1" label="Approved" max_length="40" name="approved" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approved" value="1"/>
+                <element inactive_on_update="false" label="Rejected" value="3"/>
+                <element inactive_on_update="false" label="Waiting for Approval" value="2"/>
+            </choice>
+        </element>
         <element label="Beginn" max_length="40" name="beginn" type="glide_date"/>
         <element label="Behinderung" max_length="40" name="behinderung" type="boolean"/>
         <element label="Bezahlt" max_length="40" name="bezahlt" type="boolean"/>
@@ -14,7 +21,7 @@
                 <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
             </choice>
         </element>
-        <element label="Usernummer" max_length="32" name="usernummer" reference="x_684800_g4_parkra_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Usernummer" max_length="32" name="usernummer" reference="x_684800_g4_parkra_user" type="reference" use_dynamic_default="true"/>
         <index name="index">
             <element name="parkzone"/>
         </index>
