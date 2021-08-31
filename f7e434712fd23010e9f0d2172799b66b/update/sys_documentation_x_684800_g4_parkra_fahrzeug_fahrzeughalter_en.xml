@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="fahrzeughalter" label="Fahrzeughalter" language="en" table="x_684800_g4_parkra_fahrzeug">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>fahrzeughalter</element>
+            <help/>
+            <hint/>
+            <label>Fahrzeughalter</label>
+            <language>en</language>
+            <name>x_684800_g4_parkra_fahrzeug</name>
+            <plural>Fahrzeughalters</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-08-31 10:49:23</sys_created_on>
+            <sys_id>a81d783d1b52301040a8cae0604bcb63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Fahrzeughalter</sys_name>
+            <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+            <sys_update_name>sys_documentation_x_684800_g4_parkra_fahrzeug_fahrzeughalter_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-08-31 10:49:23</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

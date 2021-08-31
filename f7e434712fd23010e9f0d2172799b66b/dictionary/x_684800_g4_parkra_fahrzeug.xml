@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Fahrzeug" max_length="40" name="x_684800_g4_parkra_fahrzeug" type="collection">
+        <element display="true" label="Fahrzeughalter" max_length="32" name="fahrzeughalter" reference="x_684800_g4_parkra_user" type="reference"/>
+        <element label="Nummernschild" max_length="40" name="nummernschild" type="string"/>
+        <index name="index">
+            <element name="fahrzeughalter"/>
+        </index>
+    </element>
+</database>

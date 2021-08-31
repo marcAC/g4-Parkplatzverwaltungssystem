@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="benutzer_id" table="x_684800_g4_parkra_user">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="parkzone" table="x_684800_g4_parkra_reservierung">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -14,33 +14,33 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Benutzer_ID</column_label>
+        <column_label>Parkzone</column_label>
         <comments/>
         <create_roles/>
-        <default_value>javascript:getNextObjNumberPadded()</default_value>
+        <default_value/>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
         <dependent_on_field/>
-        <display>true</display>
+        <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
-        <dynamic_default_value display_value="Get Next Padded Number">fdcb83a85f220100a9ad2572f2b4773c</dynamic_default_value>
+        <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>benutzer_id</element>
+        <element>parkzone</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Reference">reference</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
-        <name>x_684800_g4_parkra_user</name>
+        <max_length>32</max_length>
+        <name>x_684800_g4_parkra_reservierung</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>true</read_only>
+        <read_only>false</read_only>
         <read_roles/>
-        <reference/>
+        <reference display_value="" name="x_684800_g4_parkra_parkzone">x_684800_g4_parkra_parkzone</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -52,21 +52,21 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-08-31 10:33:53</sys_created_on>
-        <sys_id>5739b8391b52301040a8cae0604bcb59</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Benutzer_ID</sys_name>
+        <sys_created_on>2021-08-31 10:53:03</sys_created_on>
+        <sys_id>59ddf07d1b52301040a8cae0604bcb6b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Parkzone</sys_name>
         <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
         <sys_policy/>
         <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
-        <sys_update_name>sys_dictionary_x_684800_g4_parkra_user_benutzer_id</sys_update_name>
+        <sys_update_name>sys_dictionary_x_684800_g4_parkra_reservierung_parkzone</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-08-31 10:54:30</sys_updated_on>
+        <sys_updated_on>2021-08-31 10:57:50</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>true</use_dynamic_default>
+        <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>

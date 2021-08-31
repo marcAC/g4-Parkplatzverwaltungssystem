@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Reservierung" max_length="40" name="x_684800_g4_parkra_reservierung" type="collection">
+        <element label="Beginn" max_length="40" name="beginn" type="glide_date"/>
+        <element label="Behinderung" max_length="40" name="behinderung" type="boolean"/>
+        <element label="Bezahlt" max_length="40" name="bezahlt" type="boolean"/>
+        <element label="Ende" max_length="40" name="ende" type="glide_date"/>
+        <element label="Parkzone" max_length="32" name="parkzone" reference="x_684800_g4_parkra_parkzone" type="reference"/>
+        <element choice="1" default="javascript:getNextObjNumberPadded()" display="true" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Reservierungsnummer" max_length="40" name="reservierungsnummer" read_only="true" type="string" use_dynamic_default="true">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element label="Usernummer" max_length="32" name="usernummer" reference="x_684800_g4_parkra_user" type="reference"/>
+        <index name="index">
+            <element name="parkzone"/>
+        </index>
+        <index name="index2">
+            <element name="usernummer"/>
+        </index>
+    </element>
+</database>
