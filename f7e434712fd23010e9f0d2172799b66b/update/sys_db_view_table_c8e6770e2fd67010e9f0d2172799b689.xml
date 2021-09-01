@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>100</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-01 19:02:59</sys_created_on>
+        <sys_id>c8e6770e2fd67010e9f0d2172799b689</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>sys_user</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_update_name>sys_db_view_table_c8e6770e2fd67010e9f0d2172799b689</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-01 19:18:29</sys_updated_on>
+        <table>sys_user</table>
+        <variable_prefix>t1</variable_prefix>
+        <view display_value="x_684800_g4_parkra_user_all">3546fbca2fd67010e9f0d2172799b608</view>
+        <where_clause/>
+    </sys_db_view_table>
+</record_update>

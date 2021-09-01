@@ -4,39 +4,37 @@
         <application display_value="Parkraumbewirtschaftungssystem">3251c1f92f163010e9f0d2172799b666</application>
         <assessment/>
         <device_type/>
-        <filter table="x_684800_g4_parkra_reservierung">usernummerDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item endquery="false" field="usernummer" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </filter>
+        <filter/>
         <hint/>
         <homepage/>
         <image/>
         <link_type>NEW</link_type>
         <map_page/>
-        <mobile_title>Erstelle eine Reservierung</mobile_title>
+        <mobile_title>Zeige Nutzer an</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_684800_g4_parkra_reservierung</name>
-        <order>300</order>
+        <name>x_684800_g4_parkra_user</name>
+        <order>1300</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_684800_g4_parkra.studierender,x_684800_g4_parkra.professor,x_684800_g4_parkra.externer,x_684800_g4_parkra.mitarbeiter,x_684800_g4_parkra.gast,x_684800_g4_parkra.administrator</roles>
+        <roles>x_684800_g4_parkra.administrator</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-08-31 11:16:32</sys_created_on>
+        <sys_created_on>2021-09-01 18:51:39</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>0243c9f92f163010e9f0d2172799b686</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Erstelle eine Reservierung</sys_name>
+        <sys_id>ba057b4a2fd67010e9f0d2172799b6c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Erstelle Nutzer</sys_name>
         <sys_overrides/>
         <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
         <sys_policy/>
         <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
-        <sys_update_name>sys_app_module_0243c9f92f163010e9f0d2172799b686</sys_update_name>
+        <sys_update_name>sys_app_module_ba057b4a2fd67010e9f0d2172799b6c1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-01 19:30:06</sys_updated_on>
+        <sys_updated_on>2021-09-01 18:51:39</sys_updated_on>
         <timeline_page/>
-        <title>Erstelle eine Reservierung</title>
+        <title>Erstelle Nutzer</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
