@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="User" max_length="40" name="x_684800_g4_parkra_user" sizeclass="2" type="collection">
-        <element default="javascript:getNextObjNumberPadded()" display="true" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Benutzer_ID" max_length="40" name="benutzer_id" read_only="true" type="string" use_dynamic_default="true"/>
+    <element extends="sys_user" label="User" max_length="40" name="x_684800_g4_parkra_user" type="collection">
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element default="0" label="Rechnungssumme" max_length="20" name="rechnungssumme" type="currency"/>
-        <element choice="1" label="Rolle" max_length="40" name="rolle" type="choice">
+        <element default="0" label="Rechnungsnummer" max_length="20" name="rechnungsnummer" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" label="Rolle" max_length="40" name="rolle" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Externer" value="Externer"/>
                 <element inactive_on_update="false" label="Gast" value="Gast"/>
@@ -12,9 +11,5 @@
                 <element inactive_on_update="false" label="Studierender" value="Studierender"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true,encode_utf8=false" default="javascript:gs.getUserID();" display="true" dynamic_default_value="bdcb83a85f220100a9ad2572f2b4773d" label="User" mandatory="true" max_length="32" name="user" reference="sys_user" type="reference" use_dynamic_default="true"/>
-        <index name="index">
-            <element name="user"/>
-        </index>
     </element>
 </database>

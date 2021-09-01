@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 10:31:29</sys_created_on>
+        <sys_id>9ef834391b52301040a8cae0604bcb0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_684800_g4_parkra_user.x_684800_g4_parkra.administrator</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_security_acl display_value="x_684800_g4_parkra_user">def834391b52301040a8cae0604bcb0a</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_9ef834391b52301040a8cae0604bcb0d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 10:31:29</sys_updated_on>
+        <sys_user_role display_value="x_684800_g4_parkra.administrator" name="x_684800_g4_parkra.administrator">e2d8b0391b52301040a8cae0604bcb80</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</application>
+        <file_path/>
+        <instance_id>2983ec48dbfec41491232f17d496198f</instance_id>
+        <instance_name>dev98721</instance_name>
+        <name>sys_security_acl_role_9ef834391b52301040a8cae0604bcb0d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 10:31:29</sys_created_on>
+        <sys_id>9ef834391b52301040a8cae0604bcb0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_684800_g4_parkra_user.x_684800_g4_parkra.administrator</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_security_acl display_value="x_684800_g4_parkra_user">def834391b52301040a8cae0604bcb0a</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_9ef834391b52301040a8cae0604bcb0d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 10:31:29</sys_updated_on>
+        <sys_user_role display_value="x_684800_g4_parkra.administrator" name="x_684800_g4_parkra.administrator">e2d8b0391b52301040a8cae0604bcb80</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>]]></payload>
+        <payload_hash>-1871346957</payload_hash>
+        <record_name>x_684800_g4_parkra_user.x_684800_g4_parkra.administrator</record_name>
+        <reverted_from/>
+        <source>d935a1f92f963010e9f0d2172799b608</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 13:44:57</sys_created_on>
+        <sys_id>d84565f92f963010e9f0d2172799b63f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b9c74aefe0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 13:44:57</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>584565f96996301025b76be255b6043f</update_guid>
+        <update_guid_history>584565f96996301025b76be255b6043f:0,7614a1b967963010cd9eacc8a4d095c4:-1809172054,c0b3e9790e963010b76be241d415cd2e:0,0f33a179259630107a9617fe547c380c:984695306,da29bc3546163010c960371b35e6d5d5:-1871346957</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_684800_g4_parkra_user.x_684800_g4_parkra.administrator">f6cfdb4a2f967010e9f0d2172799b605</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-01 17:18:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>7c37d9590abd44c38818f2a9aa175199</sys_id>
+        <sys_metadata>9ef834391b52301040a8cae0604bcb0d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_684800_g4_parkra_user.x_684800_g4_parkra.administrator</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_parent display_value="">def834391b52301040a8cae0604bcb0a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_scope_delete display_value="">00ccbce5a6b94bc0a6cfe0c5ed36e440</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_9ef834391b52301040a8cae0604bcb0d</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_9ef834391b52301040a8cae0604bcb0d">d84565f92f963010e9f0d2172799b63f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-01 17:18:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
