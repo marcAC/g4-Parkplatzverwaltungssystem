@@ -47,7 +47,7 @@
         <reverted_from/>
         <source>d935a1f92f963010e9f0d2172799b608</source>
         <source_table>sys_upgrade_history</source_table>
-        <state>current</state>
+        <state>previous</state>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-08-31 13:44:57</sys_created_on>
         <sys_id>584565f92f963010e9f0d2172799b635</sys_id>
@@ -60,7 +60,7 @@
         <update_guid_history>d44565f9989630105f73756b44b82c35:0,3a14a1b97e963010b9d226673af0eab9:-1044746048,40b3e97976963010d48127336dca2824:0,cf33a1791b963010133fa83d24703d01:-1166239363,d229bc357f163010c27f24fa9329c8cd:1121484897</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_684800_g4_parkra_user.x_684800_g4_parkra.administrator">b6cf9b4a2f967010e9f0d2172799b6e3</sys_audit_delete>
+        <sys_audit_delete display_value="">b6cf9b4a2f967010e9f0d2172799b6e3</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-01 17:18:48</sys_created_on>

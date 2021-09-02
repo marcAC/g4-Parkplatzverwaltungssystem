@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>reservierung</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Reservierung</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-02 07:47:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>85962e5e2f523010d36d5ff62799b616</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reservierung</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_update_name>sys_hub_flow_85962e5e2f523010d36d5ff62799b616</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-02 07:47:19</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=85962e5e2f523010d36d5ff62799b616"/>
+    <sys_variable_value action="delete_multiple" query="document_key=85962e5e2f523010d36d5ff62799b616"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=85962e5e2f523010d36d5ff62799b616^sys_idNOT INc9962e5e2f523010d36d5ff62799b618"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>85962e5e2f523010d36d5ff62799b616</id>
+        <name>Reservierung</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-02 07:47:19</sys_created_on>
+        <sys_id>c9962e5e2f523010d36d5ff62799b618</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-02 07:47:19</sys_updated_on>
+    </sys_flow_cat_variable_model>
+</record_update>

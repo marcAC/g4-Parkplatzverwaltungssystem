@@ -42,13 +42,21 @@
 	}
 	else if (rolle == "Externer"){
 		var date = new GlideDate();
-		current.setValue('beginn', date.getByFormat('yyyy-mm-dd'));
-		current.setValue('ende', date.getByFormat('yyyy-mm-dd'));
-		var rechnung = user.getValue('rechnungssumme');
-		rechnung = parseInt(rechnung, 10) + parseInt(parkzone.getValue('preis'), 10);
-		user.setValue('rechnungssumme', rechnung);
+		gs.info(date.getDisplayValueInternal());
+		current.setValue('beginn', date.getDisplayValueInternal());
+		current.setValue('ende', date.getDisplayValueInternal());
+		
+		var rechnungssumme = new GlideRecord('x_684800_g4_parkra_user');
+		rechnungssumme.addQuery('user_name', user.getValue('user_name'));
+		rechnungssumme.query();
+		if (rechnungssumme.next()){
+			var rechnung = rechnungssumme.getValue('rechnungssumme');
+			rechnung = parseInt(rechnung, 10) + parseInt(parkzone.getValue('preis'), 10);
+			rechnungssumme.setValue('rechnungssumme', rechnung);
+		}		
+		
 		current.update();
-		user.update();
+		rechnungssumme.update();
 	}
 
 	var behindert = current.getValue('behinderung');
@@ -81,7 +89,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>97e6c9751b92301040a8cae0604bcbc9</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Reservierung</sys_name>
         <sys_overrides/>
         <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
@@ -89,7 +97,7 @@
         <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
         <sys_update_name>sys_script_97e6c9751b92301040a8cae0604bcbc9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-01 12:58:08</sys_updated_on>
+        <sys_updated_on>2021-09-02 08:12:59</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
