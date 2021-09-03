@@ -6,7 +6,7 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2021-08-31 10:35:31</sys_created_on>
-            <sys_id>e1e9b0791b52301040a8cae0604bcb01</sys_id>
+            <sys_id>38191a522f523010d36d5ff62799b6d9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>rolle</sys_name>
             <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
@@ -16,105 +16,5 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2021-08-31 10:35:31</sys_updated_on>
         </sys_choice_set>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>rolle</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Externer</label>
-            <language>en</language>
-            <name>x_684800_g4_parkra_user</name>
-            <sequence/>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-08-31 10:36:15</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>941abc391b52301040a8cae0604bcb94</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-08-31 10:36:15</sys_updated_on>
-            <value>Externer</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>rolle</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Gast</label>
-            <language>en</language>
-            <name>x_684800_g4_parkra_user</name>
-            <sequence/>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-08-31 10:36:05</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>b90abc391b52301040a8cae0604bcb5e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-08-31 10:36:05</sys_updated_on>
-            <value>Gast</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>rolle</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Mitarbeiter</label>
-            <language>en</language>
-            <name>x_684800_g4_parkra_user</name>
-            <sequence/>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-08-31 10:35:57</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>7ff9f0791b52301040a8cae0604bcb59</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-08-31 10:35:57</sys_updated_on>
-            <value>Mitarbeiter</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>rolle</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Professor</label>
-            <language>en</language>
-            <name>x_684800_g4_parkra_user</name>
-            <sequence/>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-08-31 10:35:45</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>4df9f4391b52301040a8cae0604bcb6a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-08-31 10:35:45</sys_updated_on>
-            <value>Professor</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>rolle</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Studierender</label>
-            <language>en</language>
-            <name>x_684800_g4_parkra_user</name>
-            <sequence/>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-08-31 10:35:34</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>1ee930791b52301040a8cae0604bcb1c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-08-31 10:35:34</sys_updated_on>
-            <value>Studierender</value>
-        </sys_choice>
     </sys_choice>
 </record_update>

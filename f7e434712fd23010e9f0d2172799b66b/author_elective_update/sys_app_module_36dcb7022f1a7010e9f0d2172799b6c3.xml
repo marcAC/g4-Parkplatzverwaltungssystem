@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application/>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Zeige Nutzer an</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sys_user</name>
+        <order>1210</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_684800_g4_parkra.administrator</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-01 19:25:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>36dcb7022f1a7010e9f0d2172799b6c3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Zeige alle ServiceNow Nutzer an</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_update_name>sys_app_module_36dcb7022f1a7010e9f0d2172799b6c3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-03 09:09:59</sys_updated_on>
+        <timeline_page/>
+        <title>Zeige alle ServiceNow Nutzer an</title>
+        <uncancelable>false</uncancelable>
+        <view_name>Zeige alle ServiceNow Nutzer an</view_name>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</application>
+        <file_path/>
+        <instance_id>3be7d391dbba9b006578f22ebf9619dc</instance_id>
+        <instance_name>dev61689</instance_name>
+        <name>sys_app_module_36dcb7022f1a7010e9f0d2172799b6c3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application/><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Zeige Nutzer an</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>sys_user</name><order>1210</order><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_684800_g4_parkra.administrator</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-09-01 19:25:48</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>36dcb7022f1a7010e9f0d2172799b6c3</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Zeige alle ServiceNow Nutzer an</sys_name><sys_overrides/><sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package><sys_policy/><sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope><sys_update_name>sys_app_module_36dcb7022f1a7010e9f0d2172799b6c3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-09-03 09:09:59</sys_updated_on><timeline_page/><title>Zeige alle ServiceNow Nutzer an</title><uncancelable>false</uncancelable><view_name>Zeige alle ServiceNow Nutzer an</view_name><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1194915437</payload_hash>
+        <record_name>Zeige alle ServiceNow Nutzer an</record_name>
+        <reverted_from/>
+        <source>753956522f523010d36d5ff62799b693</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-03 09:17:18</sys_created_on>
+        <sys_id>89c4c87e2f127010d36d5ff62799b6ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17baaf2b7fc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-03 09:17:18</sys_updated_on>
+        <type>Module</type>
+        <update_guid>ce13403e9612701043a06b9194a66472</update_guid>
+        <update_guid_history>ce13403e9612701043a06b9194a66472:1229615171,ce13403e9612701043a06b9194a66472:1229615171,23f2803e631270100a7efa37a33f5de9:-1711300690,c6ccfba605127010816e39c6be28d24b:-303758868,8c30c07a961270107a7ba4fd5c2fe9e9:0,c6ccfba605127010816e39c6be28d24b:-303758868,d2887be232127010c1c2aebd80b80c4c:0,e7bcf31eeb5630108021c5e28709c304:-303758868,9b19da52be523010cf5a8fe9a1d8be8e:-1113964248</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Zeige alle ServiceNow Nutzer an">6bf4cc7e2f127010d36d5ff62799b6d1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-03 09:18:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>224b9dcfc3f341d28fa77814dc237da9</sys_id>
+        <sys_metadata>36dcb7022f1a7010e9f0d2172799b6c3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Zeige alle ServiceNow Nutzer an</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_scope_delete display_value="">00ccbce5a6b94bc0a6cfe0c5ed36e440</sys_scope_delete>
+        <sys_update_name>sys_app_module_36dcb7022f1a7010e9f0d2172799b6c3</sys_update_name>
+        <sys_update_version display_value="sys_app_module_36dcb7022f1a7010e9f0d2172799b6c3">89c4c87e2f127010d36d5ff62799b6ed</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-03 09:18:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

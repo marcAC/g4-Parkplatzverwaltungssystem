@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name/>
+        <order>100</order>
+        <roles>x_684800_g4_parkra.administrator,x_684800_g4_parkra.studierender,x_684800_g4_parkra.professor,x_684800_g4_parkra.mitarbeiter,x_684800_g4_parkra.gast,x_684800_g4_parkra.externer</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 11:08:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3251c1f92f163010e9f0d2172799b666</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Parkraumbewirtschaftungssystem</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_update_name>sys_app_application_3251c1f92f163010e9f0d2172799b666</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 11:31:31</sys_updated_on>
+        <title>Parkraumbewirtschaftungssystem</title>
+        <view_name/>
+    </sys_app_application>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</application>
+        <file_path/>
+        <instance_id>3be7d391dbba9b006578f22ebf9619dc</instance_id>
+        <instance_name>dev61689</instance_name>
+        <name>sys_app_application_3251c1f92f163010e9f0d2172799b666</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name/>
+        <order>100</order>
+        <roles>x_684800_g4_parkra.administrator,x_684800_g4_parkra.studierender,x_684800_g4_parkra.professor,x_684800_g4_parkra.mitarbeiter,x_684800_g4_parkra.gast,x_684800_g4_parkra.externer</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-31 11:08:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3251c1f92f163010e9f0d2172799b666</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Parkraumbewirtschaftungssystem</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_update_name>sys_app_application_3251c1f92f163010e9f0d2172799b666</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-31 11:31:31</sys_updated_on>
+        <title>Parkraumbewirtschaftungssystem</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>]]></payload>
+        <payload_hash>1814103659</payload_hash>
+        <record_name>Parkraumbewirtschaftungssystem</record_name>
+        <reverted_from/>
+        <source>e5195a522f523010d36d5ff62799b66d</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-02 06:48:29</sys_created_on>
+        <sys_id>1319da522f523010d36d5ff62799b687</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ba5441b870000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-02 06:48:29</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>df19da523252301011c3483ef1136486</update_guid>
+        <update_guid_history>df19da523252301011c3483ef1136486:1814103659</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Parkraumbewirtschaftungssystem">4dc4c87e2f127010d36d5ff62799b6f6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-03 09:17:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>0549c94bd7a6423f89503985945483e1</sys_id>
+        <sys_metadata>3251c1f92f163010e9f0d2172799b666</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Parkraumbewirtschaftungssystem</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_scope_delete display_value="">00ccbce5a6b94bc0a6cfe0c5ed36e440</sys_scope_delete>
+        <sys_update_name>sys_app_application_3251c1f92f163010e9f0d2172799b666</sys_update_name>
+        <sys_update_version display_value="sys_app_application_3251c1f92f163010e9f0d2172799b666">1319da522f523010d36d5ff62799b687</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-03 09:17:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
