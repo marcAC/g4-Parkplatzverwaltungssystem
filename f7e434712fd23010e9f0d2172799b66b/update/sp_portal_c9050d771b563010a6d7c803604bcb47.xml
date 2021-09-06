@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <css_variables>$brand-primary: #696969;&#13;
+$navbar-inverse-bg:#20B2AA;&#13;
+$navbar-inverse-link-color: #ffffff;&#13;
+</css_variables>
+        <default>false</default>
+        <enable_ais>false</enable_ais>
+        <hide_portal_name>false</hide_portal_name>
+        <homepage display_value="homepage">2e072dfb1b963010a6d7c803604bcb6b</homepage>
+        <icon>67427d371bd63010a6d7c803604bcb56</icon>
+        <kb_knowledge_base/>
+        <kb_knowledge_page display_value="kb_view2">26c2e030d7201200a9addd173e24d437</kb_knowledge_page>
+        <login_page display_value="index">46cc384147532100ba13a5554ee49009</login_page>
+        <logo>6485f5b71bd63010a6d7c803604bcb6f</logo>
+        <notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page>
+        <quick_start_config/>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <search_application/>
+        <search_results_configuration/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu display_value="Parkraumbewirtschaftung menü">0b2a21ff1b963010a6d7c803604bcb41</sp_rectangle_menu>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-06 16:37:05</sys_created_on>
+        <sys_id>c9050d771b563010a6d7c803604bcb47</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Parkraumbewirtschaftung Portal </sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_update_name>sp_portal_c9050d771b563010a6d7c803604bcb47</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-06 20:05:54</sys_updated_on>
+        <theme display_value="Stock - High Contrast">f84873986711320023c82e08f585ef6a</theme>
+        <title>Parkraumbewirtschaftung Portal </title>
+        <ts_index_group/>
+        <url_suffix>pp</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=c9050d771b563010a6d7c803604bcb47"/>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#dde8e8</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/jpeg</content_type>
+        <file_name>logo</file_name>
+        <hash>ec9faafb446848579c520183417cd94534a5f1b25aabd0f9165eb4467308093f</hash>
+        <image_height>131</image_height>
+        <image_width>350</image_width>
+        <size_bytes>5243</size_bytes>
+        <size_compressed>4893</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-06 20:03:49</sys_created_on>
+        <sys_id>6485f5b71bd63010a6d7c803604bcb6f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-06 20:03:49</sys_updated_on>
+        <table_name>ZZ_YYsp_portal</table_name>
+        <table_sys_id>c9050d771b563010a6d7c803604bcb47</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="logo" sys_id="6485f5b71bd63010a6d7c803604bcb6f">6485f5b71bd63010a6d7c803604bcb6f</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-06 20:03:49</sys_created_on>
+        <sys_id>a485f5b71bd63010a6d7c803604bcb6f</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>6512</length>
+        <position>1</position>
+        <sys_attachment display_value="logo" sys_id="6485f5b71bd63010a6d7c803604bcb6f">6485f5b71bd63010a6d7c803604bcb6f</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-06 20:03:49</sys_created_on>
+        <sys_id>2885f5b71bd63010a6d7c803604bcb6f</sys_id>
+    </sys_attachment_doc>
+</record_update>
