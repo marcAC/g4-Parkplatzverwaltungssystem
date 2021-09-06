@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>usernummer</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Daten dürfen für Gäste ausgewählt werden</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	
+	g_form.getReference('usernummer', doStuff);
+   
+}
+
+function doStuff(caller) { // reference is passed into callback as first arguments
+	var rolle = caller.getValue('x_684800_g4_parkra_rolle');
+
+	if (rolle == 'Gast'){
+		g_form.setDisplay('ende', true);
+		g_form.setDisplay('beginn', true);
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-06 12:26:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>91bb80b32fd23010d36d5ff62799b6ff</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Daten dürfen für Gäste ausgewählt werden</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_update_name>sys_script_client_91bb80b32fd23010d36d5ff62799b6ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-06 12:55:50</sys_updated_on>
+        <table>x_684800_g4_parkra_reservierung</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

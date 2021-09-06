@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>beginn</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-06 12:05:34</sys_created_on>
+        <sys_id>f9f7ccbf2f923010d36d5ff62799b65e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>beginn</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_update_name>sys_ui_policy_action_f9f7ccbf2f923010d36d5ff62799b65e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-06 12:05:34</sys_updated_on>
+        <table>x_684800_g4_parkra_reservierung</table>
+        <ui_policy display_value="Für Gäste dürfen Daten ausgewählt werden">13978c7f2f923010d36d5ff62799b627</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</application>
+        <file_path/>
+        <instance_id>3be7d391dbba9b006578f22ebf9619dc</instance_id>
+        <instance_name>dev61689</instance_name>
+        <name>sys_ui_policy_action_f9f7ccbf2f923010d36d5ff62799b65e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>beginn</field><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-09-06 12:05:34</sys_created_on><sys_id>f9f7ccbf2f923010d36d5ff62799b65e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>beginn</sys_name><sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package><sys_policy/><sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope><sys_update_name>sys_ui_policy_action_f9f7ccbf2f923010d36d5ff62799b65e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-09-06 12:05:34</sys_updated_on><table>x_684800_g4_parkra_reservierung</table><ui_policy display_value="Für Gäste dürfen Daten ausgewählt werden">13978c7f2f923010d36d5ff62799b627</ui_policy><visible>true</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>523651496</payload_hash>
+        <record_name>beginn</record_name>
+        <reverted_from/>
+        <source>b716847f2f923010d36d5ff62799b68e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-06 12:05:34</sys_created_on>
+        <sys_id>870844ff2f923010d36d5ff62799b624</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bbaffd8180000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-06 12:05:34</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>cf0844ff7692301005e511d2f29aa023</update_guid>
+        <update_guid_history>cf0844ff7692301005e511d2f29aa023:523651496</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-06 12:06:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>34bc3054fdd14a3895db4a6c76e3b640</sys_id>
+        <sys_metadata>f9f7ccbf2f923010d36d5ff62799b65e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>beginn</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_parent display_value="">13978c7f2f923010d36d5ff62799b627</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_scope_delete display_value="">00ccbce5a6b94bc0a6cfe0c5ed36e440</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_f9f7ccbf2f923010d36d5ff62799b65e</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_f9f7ccbf2f923010d36d5ff62799b65e">870844ff2f923010d36d5ff62799b624</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-06 12:06:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
