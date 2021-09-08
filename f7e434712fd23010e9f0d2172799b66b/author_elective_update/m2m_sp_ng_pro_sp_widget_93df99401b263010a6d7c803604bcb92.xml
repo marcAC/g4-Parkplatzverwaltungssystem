@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget">
+    <m2m_sp_ng_pro_sp_widget action="DELETE">
+        <sp_angular_provider display_value="spAttachmentManager">06e836f0d722120023c84f80de6103a1</sp_angular_provider>
+        <sp_widget display_value="test">57df99401b263010a6d7c803604bcb8f</sp_widget>
+        <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-07 13:07:43</sys_created_on>
+        <sys_id>93df99401b263010a6d7c803604bcb92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>spAttachmentManager.test</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_93df99401b263010a6d7c803604bcb92</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-07 13:07:43</sys_updated_on>
+    </m2m_sp_ng_pro_sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</application>
+        <file_path/>
+        <instance_id>2eded768db8cfc50e03ad7c8f49619dc</instance_id>
+        <instance_name>dev113953</instance_name>
+        <name>m2m_sp_ng_pro_sp_widget_93df99401b263010a6d7c803604bcb92</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget"><m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE"><sp_angular_provider display_value="spAttachmentManager">06e836f0d722120023c84f80de6103a1</sp_angular_provider><sp_widget display_value="test">57df99401b263010a6d7c803604bcb8f</sp_widget><sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-09-07 13:07:43</sys_created_on><sys_id>93df99401b263010a6d7c803604bcb92</sys_id><sys_mod_count>0</sys_mod_count><sys_name>spAttachmentManager.test</sys_name><sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package><sys_policy/><sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope><sys_update_name>m2m_sp_ng_pro_sp_widget_93df99401b263010a6d7c803604bcb92</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-09-07 13:07:43</sys_updated_on></m2m_sp_ng_pro_sp_widget></record_update>]]></payload>
+        <payload_hash>-850406355</payload_hash>
+        <record_name>spAttachmentManager.test</record_name>
+        <reverted_from/>
+        <source>b3db70791b563010a6d7c803604bcb8b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-07 13:07:43</sys_created_on>
+        <sys_id>5fdfd1801b263010a6d7c803604bcbcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bc05f1be20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-07 13:07:43</sys_updated_on>
+        <type>Angular Providers</type>
+        <update_guid>17df9940cb2630103b7e85780aaecd94</update_guid>
+        <update_guid_history>17df9940cb2630103b7e85780aaecd94:-850406355</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="spAttachmentManager.test">459f85501b223010a6d7c803604bcb2c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-08 06:35:03</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_ng_pro_sp_widget">m2m_sp_ng_pro_sp_widget</sys_db_object>
+        <sys_id>1c4edf9fd0c0464a8db0928cd804e4a1</sys_id>
+        <sys_metadata>93df99401b263010a6d7c803604bcb92</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>spAttachmentManager.test</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_scope_delete display_value="">00ccbce5a6b94bc0a6cfe0c5ed36e440</sys_scope_delete>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_93df99401b263010a6d7c803604bcb92</sys_update_name>
+        <sys_update_version display_value="m2m_sp_ng_pro_sp_widget_93df99401b263010a6d7c803604bcb92">5fdfd1801b263010a6d7c803604bcbcf</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-08 06:35:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_menu">
+    <sp_instance_menu action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <glyph>th</glyph>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">4a60d1901b223010a6d7c803604bcbb7</sp_column>
+        <sp_widget display_value="Icon Menu List">88979930cb01020000f8d856634c9caa</sp_widget>
+        <sys_class_name>sp_instance_menu</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-08 07:04:35</sys_created_on>
+        <sys_id>e55691541b223010a6d7c803604bcb0e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Park</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_update_name>sp_instance_menu_e55691541b223010a6d7c803604bcb0e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-08 07:05:21</sys_updated_on>
+        <title>Park</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_menu>
+    <sys_translated_text action="DELETE" query="documentkey=e55691541b223010a6d7c803604bcb0e"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</application>
+        <file_path/>
+        <instance_id>2eded768db8cfc50e03ad7c8f49619dc</instance_id>
+        <instance_name>dev113953</instance_name>
+        <name>sp_instance_menu_e55691541b223010a6d7c803604bcb0e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_menu"><sp_instance_menu action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>primary</color><css/><glyph>th</glyph><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">4a60d1901b223010a6d7c803604bcbb7</sp_column><sp_widget display_value="Icon Menu List">88979930cb01020000f8d856634c9caa</sp_widget><sys_class_name>sp_instance_menu</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-09-08 07:04:35</sys_created_on><sys_id>e55691541b223010a6d7c803604bcb0e</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Park</sys_name><sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package><sys_policy/><sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope><sys_update_name>sp_instance_menu_e55691541b223010a6d7c803604bcb0e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-09-08 07:05:21</sys_updated_on><title>Park</title><url/><widget_parameters/></sp_instance_menu><sys_translated_text action="delete_multiple" query="documentkey=e55691541b223010a6d7c803604bcb0e"/></record_update>]]></payload>
+        <payload_hash>-927006646</payload_hash>
+        <record_name>Park</record_name>
+        <reverted_from/>
+        <source>b3db70791b563010a6d7c803604bcb8b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-08 07:05:21</sys_created_on>
+        <sys_id>b086d5941b223010a6d7c803604bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bc439b5210000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-08 07:05:21</sys_updated_on>
+        <type>Instance with Menu</type>
+        <update_guid>f886d594dd223010a35ad64af6804ce4</update_guid>
+        <update_guid_history>f886d594dd223010a35ad64af6804ce4:-927006646,f156199450223010a5e04b6371b4a1cd:-708171372</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Park">28971d941b223010a6d7c803604bcb51</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-08 07:09:59</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_menu">sp_instance_menu</sys_db_object>
+        <sys_id>46a4c8a087b8454e973006c4754baf24</sys_id>
+        <sys_metadata>e55691541b223010a6d7c803604bcb0e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Park</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_scope_delete display_value="">00ccbce5a6b94bc0a6cfe0c5ed36e440</sys_scope_delete>
+        <sys_update_name>sp_instance_menu_e55691541b223010a6d7c803604bcb0e</sys_update_name>
+        <sys_update_version display_value="sp_instance_menu_e55691541b223010a6d7c803604bcb0e">b086d5941b223010a6d7c803604bcbe5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-08 07:09:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

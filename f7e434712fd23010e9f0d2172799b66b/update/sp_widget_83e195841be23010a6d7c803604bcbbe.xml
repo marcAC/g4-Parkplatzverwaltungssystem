@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function() {
+        <client_script><![CDATA[function($scope) {
+	
   var c = this;
 	
-c.fahrzeugreg= function(n)
+c.fahrzeugreg= function()
 {
-c.data.Nummernschild=n.Nummernschild;
-c.server.insert.then(function(){
-c.data();
-});
+c.server.insert.then(function(response){
+c.data={};
+})
 
-}
-
-		c.fahrzeugdelete=function(n)
-{
-c.data.Nummernschild=n.Nummernschild;
-c.server.delet.then(function(){
-c.data();
-});
-}
-		
+}	
 }]]></client_script>
         <controller_as>c</controller_as>
         <css>.border{
@@ -57,59 +48,69 @@ c.data();
         <docs/>
         <field_list/>
         <has_preview>true</has_preview>
-        <id>fahrzeugreg</id>
+        <id>parkzonereg</id>
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {
   
 }]]></link>
-        <name>Fahrzeug registrieren</name>
+        <name>Parkzone registrieren</name>
         <option_schema/>
         <public>false</public>
-        <roles/>
+        <roles>x_684800_g4_parkra.administrator</roles>
         <script><![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
+
+	if(!input)
+		return; 
 	
-data.userInfo=[];
-var gr= new GlideRecord('sys_user');
-gr.addQuery('sys_id',gs.getUserID());
-gr.Query();
-while(gr.Next())
-{
-data.userInfo.push({
-Fahrzeughalter:gr.sys_id.toString(),
-Nummernschild:gr.Nummernschild.toString()
-});
+    var glideRecord = new GlideRecord('x_684800_g4_parkra_parkzone');
+  glideRecord.initialize();
+
+		glideRecord.Name= input.Name.toString(); 
+	glideRecord.Preis=input.Preis.parseFloat();
+		glideRecord.Kapazitaet=input.Kapazitaet.parseInt();
+	glideRecord.Behindertenparkplaetze=input.Behindertenparkplaetze.parseInt();
 	
 
-}
 //gs.addInomMessage("Name of User"+ datauserInfo[0].Nummernschild);
-	
+
+
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-09-06 20:30:39</sys_created_on>
-        <sys_id>f88bf53b1bd63010a6d7c803604bcb7e</sys_id>
-        <sys_mod_count>31</sys_mod_count>
-        <sys_name>Fahrzeug registrieren</sys_name>
+        <sys_created_on>2021-09-07 12:07:23</sys_created_on>
+        <sys_id>83e195841be23010a6d7c803604bcbbe</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_name>Parkzone registrieren</sys_name>
         <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
         <sys_policy/>
         <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
-        <sys_update_name>sp_widget_f88bf53b1bd63010a6d7c803604bcb7e</sys_update_name>
+        <sys_update_name>sp_widget_83e195841be23010a6d7c803604bcbbe</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-07 09:54:53</sys_updated_on>
+        <sys_updated_on>2021-09-07 19:31:15</sys_updated_on>
         <template><![CDATA[<div class="panel panel-default">
 <div class= "panel-body border background">
   
-  <div class= "form-group">
-<label class="label">Fahrzeughalter</label>
-    <input class="form-control" readonly ng-repeat= "n in data.UserInfo">
-   </div>
+
   
     <div class= "form-group">
-<label class="label">Nummernschild</label>
-    <input class="form-control" ng-moder="n.Fahzeughalter">
+<label class="label">Name</label>
+    <input class="form-control" ng-moder="c.data.Name">
+   </div>
+  
+      <div class= "form-group">
+<label class="label">Kapazität</label>
+    <input class="form-control" ng-moder="c.data.Kapazitaet">
+   </div>
+  
+      <div class= "form-group">
+<label class="label">Preis</label>
+    <input class="form-control" ng-moder="c.data.Preis">
+   </div>
+  
+     <div class= "form-group">
+<label class="label"> Behindertenparkplaetze</label>
+    <input class="form-control" ng-moder="c.data.Behindertenparkplaetze">
    </div>
   
     <div class= "form-group" >

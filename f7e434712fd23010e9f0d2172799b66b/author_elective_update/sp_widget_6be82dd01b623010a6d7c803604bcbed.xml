@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>standard</category>
+        <client_script><![CDATA[function ($scope, $location, $rootScope, spUtil, $interpolate) {
+	var c = this;
+
+	this.data.filterText = "";
+	this.showFilter = false;
+
+	this.onClick = function($event, item, url, action) {
+		$event.stopPropagation();
+		$event.preventDefault();
+		if (typeof url == "string") {
+			var urlExp = $interpolate(url);
+			url = urlExp(item);
+			$location.url(url);
+		} else if (url && typeof url == "object")
+			$location.search(url);
+		else {
+			var evt = {};
+			evt.url = url;
+			evt.table = item.className;
+			evt.sys_id = item.sys_id;
+			evt.record = item;
+			evt.rectangle_id = c.options.sys_id;
+			evt.action = action;
+			// put out the selection with simple list "sl_" prefix
+			$location.search('sl_sys_id', evt.sys_id);
+			$location.search('sl_table', evt.table);
+			$location.search('spa', 1); // spa means "I've got this"
+			$rootScope.$broadcast('$sp.list.click', evt);
+		}
+	};
+
+	if (c.options.table && c.options.disable_record_watcher != 'true')
+		spUtil.recordWatch($scope, c.options.table, c.options.filter);
+
+	this.getMaxShownLabel = function(maxEntries, totalCount) {
+		if (totalCount == c.data.maxCount)
+			return "${First [0] of more than [1]}".replace('[0]', maxEntries).replace('[1]', totalCount);
+
+		return "${First [0] of [1]}".replace('[0]', maxEntries).replace('[1]', totalCount);
+	};
+
+	this.seeAllPage = c.options.list_page_dv || 'list';
+	this.targetPageID = (c.options.sp_page) ? "&target_page_id=" + c.options.sp_page : "";
+
+	c.getMaxHeight = function() {
+		return c.options.panel_body_height || 'none';
+	};
+
+	c.getActionColor = function(action) {
+		return "text-" + action.color;
+	};
+
+	c.update = function update() {
+			c.server.update();
+	}
+
+	c.toggleFilter = function() {
+		c.showFilter = !c.showFilter;
+	}
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.panel {
+position: relative;
+}
+
+.panel-heading i {
+  cursor: pointer;
+  position: absolute;
+  padding: 10px;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.disabled-filter {
+	color: #A0A0A0;
+}
+
+.list-group-item.ng-enter {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+
+  background-color: #c0dcfa;
+}
+
+.list-group-item.ng-enter-active {
+  background-color: #fff;
+}
+
+.hide-x-overflow {
+  overflow-x: hidden;
+}
+
+.translated-html &gt; p {
+  margin: 0px;
+  padding: 0px;
+}
+
+IMG {
+  max-width: 320px;
+  max-height: 240px;
+}
+
+IMG.img-sm {
+  max-height: 40px;
+  max-width: 40px;
+}
+
+.filter-box {
+  margin-top: 10px;
+}
+
+.panel-footer {
+  .number-shown-label {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    display: inline-block;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.list-group-item &gt; a {
+	display: inline-block;
+}</css>
+        <data_table>sp_instance_vlist</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>table,filter,maximum_entries,display_field,color,size,glyph,sp_page</field_list>
+        <has_preview>true</has_preview>
+        <id>parkzonelist</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>ParkzoneList</name>
+        <option_schema>[{"name":"always_show","section":"Behavior","label":"Show even when empty","type":"boolean"},{"name":"panel_body_height","section":"Presentation","label":"List body height","type":"string"},{"name":"image_field","section":"Presentation","label":"Image field","type":"field_name"},{"name":"secondary_fields","section":"Data","label":"Secondary fields","type":"field_list"},{"name":"rounded_images","section":"Presentation","label":"Rounded images","type":"boolean"},{"displayValue":"Page","name":"list_page","section":"Data","label":"List page","type":"reference","value":"sp_page","ed":{"reference":"sp_page"}},{"name":"hide_footer","section":"Presentation","label":"Hide Footer","type":"boolean"},{"displayValue":"UI View","hint":"View to use when target page is a form","name":"view","section":"Behavior","label":"View","type":"reference","value":"sys_ui_view","ed":{"reference":"sys_ui_view"}},{"hint":"If checked, Simple List will not automatically updated based on changes to the filtered records","name":"disable_record_watcher","section":"Behavior","label":"Disable record watcher","type":"boolean"},{"name":"filter_acls","section":"Data","default_value":"false","label":"Enforce field-level Read ACLs on Filter query terms (may alter the query for unprivileged users)","type":"boolean"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function () {
+	data.filterMsg = gs.getMessage("Filter...");
+	data.viewAllMsg = gs.getMessage("View all");
+	if (gs.nil(options.hide_footer))
+	    options.hide_footer = false;
+	options.hide_footer = (options.hide_footer == "true" || options.hide_footer == true);
+	options.table = $sp.getParameter('t') || options.table;
+	if (!options.table)
+		return;
+
+	var gr = new GlideRecordSecure(options.table); // does ACL checking for us
+	if (!gr.isValid()) {
+		data.isValid = false;
+		return;
+	} else
+		data.isValid = true;
+	// grTemp is used to check isValidField since using GlideRecordSecure fails for date/time fields
+	var grTemp = new GlideRecord(options.table);
+	if (options.filter_acls == "true")
+		gr = $sp.addQueryString(gr, options.filter);
+	else
+		gr.addEncodedQuery(options.filter);
+	
+	var gp = gr.getED(); //
+options.title = options.title || gp.getPlural(); 
+//	options.title = options.title || gr.getPlural();
+	options.display_field = $sp.getParameter('f') || options.display_field;
+	if (!options.display_field || !grTemp.isValidField(options.display_field))
+		options.display_field = gr.getDisplayName();
+
+	if (input && input.filterText)
+		gr.addEncodedQuery(options.display_field + "LIKE" + input.filterText)
+
+
+options.title = options.title || gp.getPlural(); 
+	//options.title = options.title || gr.getPlural();
+	options.secondary_fields = options.secondary_fields || "";
+	options.secondary_fields = options.secondary_fields.split(",");
+	if (!options.order_by || !grTemp.isValidField(options.order_by))
+		options.order_by = options.display_field;
+
+	// Set ID of sp_page from option schema
+	if (options.list_page) {
+		var sp_page = GlideRecord('sp_page');
+		if (sp_page.get(options.list_page))
+			options.list_page_dv = sp_page.getDisplayValue('id');
+	}
+
+	// redo query with limit
+	if (options.order_direction == "asc")
+		gr.orderBy(options.order_by);
+	else
+		gr.orderByDesc(options.order_by);
+
+	data.maxCount = 500;
+	gr.setLimit(data.maxCount);
+	gr.query();
+
+	data.count = gr.getRowCount();
+	data.actions = getActions();
+	data.list = [];
+	var recordIdx = 0;
+	while (gr.next()) {
+		if (options.maximum_entries && recordIdx == options.maximum_entries)
+			break;
+
+		var record = {};
+		if (data.actions.length > 0) {
+			var fields = gr.getFields();
+			for (var i = 0; i < fields.size(); i++) {
+				var glideElement = fields.get(i);
+				var name = glideElement.getName();
+				if (name.indexOf("sys_") == -1)
+					record[name] = gr.getValue(name);
+			}
+		}
+
+		record.sys_id = gr.getValue('sys_id');
+		record.className = gr.getRecordClassName();
+		if (options.image_field) {
+			record.image_field = gr.getDisplayValue(options.image_field);
+			if (!record.image_field)
+				record.image_field = "noimage.pngx";
+		}
+
+		if (options.display_field)
+			record.display_field = getField(gr, options.display_field);
+
+		record.secondary_fields = [];
+		options.secondary_fields.forEach(function(f) {
+			record.secondary_fields.push(getField(gr, f));
+		});
+
+		if (options.sp_page) {
+			var view = "sp";
+			if (options.view) {
+				var viewGR = new GlideRecord("sys_ui_view");
+				viewGR.get(options.view);
+				view = viewGR.getValue("name");
+			}
+			record.url = {id: options.sp_page, table: record.className, sys_id: record.sys_id, view: view};
+		} else if (options.url != '')
+			record.url = options.url;
+		else
+			record.url = null;
+
+		data.list.push(record);
+		recordIdx++;
+	}
+
+	function getField(gr, name) {
+		var f = {};
+		f.display_value = gr.getDisplayValue(name);
+		f.value = gr.getValue(name);
+		var ge = gr.getElement(name);
+			if (ge == null)
+				return f;
+
+		f.type = ge.getED().getInternalType();
+		if (f.type == "glide_date_time")
+			f.isFuture = gs.dateDiff(gr.getValue(name), gs.nowNoTZ(), true) < 0;
+		else if (f.type == "glide_date")
+			f.isFuture = gs.dateDiff(gr.getValue(name), gs.now(), true) < 0;
+		f.label = ge.getLabel();
+		return f;
+	}
+
+	function getActions() {
+		var rl = GlideRecord("sp_vlist_action");
+		rl.addQuery("sp_rectangle_vlist",$sp.getValue("sys_id"));
+		rl.query();
+		var actions = [];
+		while(rl.next()) {
+			var action = {};
+			$sp.getRecordValues(action, rl, "name,glyph,hint,url,color");
+			actions.push(action);
+		}
+		return actions;
+	}
+})()]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-08 08:25:49</sys_created_on>
+        <sys_id>6be82dd01b623010a6d7c803604bcbed</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>ParkzoneList</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_update_name>sp_widget_6be82dd01b623010a6d7c803604bcbed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-08 09:55:56</sys_updated_on>
+        <template><![CDATA[<div  ng-if="showWidget == 'parkzonereg'" class="panel panel-{{::c.options.color}} b" ng-if="c.data.isValid && (c.options.always_show == 'true' || c.options.always_show == true || c.data.filterText || c.data.list.length)">
+(function () {
+	data.filterMsg = gs.getMessage("Filter...");
+	data.viewAllMsg = gs.getMessage("View all");
+	if (gs.nil(options.hide_footer))
+	    options.hide_footer = false;
+	options.hide_footer = (options.hide_footer == "true" || options.hide_footer == true);
+	options.table = $sp.getParameter('t') || options.table;
+	if (!options.table)
+		return;
+
+	var gr = new GlideRecordSecure(options.table); // does ACL checking for us
+	if (!gr.isValid()) {
+		data.isValid = false;
+		return;
+	} else
+		data.isValid = true;
+	// grTemp is used to check isValidField since using GlideRecordSecure fails for date/time fields
+	var grTemp = new GlideRecord(options.table);
+	if (options.filter_acls == "true")
+		gr = $sp.addQueryString(gr, options.filter);
+	else
+		gr.addEncodedQuery(options.filter);
+	options.title = options.title || gr.getPlural();
+	options.display_field = $sp.getParameter('f') || options.display_field;
+	if (!options.display_field || !grTemp.isValidField(options.display_field))
+		options.display_field = gr.getDisplayName();
+
+	if (input && input.filterText)
+		gr.addEncodedQuery(options.display_field + "LIKE" + input.filterText)
+
+	options.title = options.title || gr.getPlural();
+	options.secondary_fields = options.secondary_fields || "";
+	options.secondary_fields = options.secondary_fields.split(",");
+	if (!options.order_by || !grTemp.isValidField(options.order_by))
+		options.order_by = options.display_field;
+
+	// Set ID of sp_page from option schema
+	if (options.list_page) {
+		var sp_page = GlideRecord('sp_page');
+		if (sp_page.get(options.list_page))
+			options.list_page_dv = sp_page.getDisplayValue('id');
+	}
+
+	// redo query with limit
+	if (options.order_direction == "asc")
+		gr.orderBy(options.order_by);
+	else
+		gr.orderByDesc(options.order_by);
+
+	data.maxCount = 500;
+	gr.setLimit(data.maxCount);
+	gr.query();
+
+	data.count = gr.getRowCount();
+	data.actions = getActions();
+	data.list = [];
+	var recordIdx = 0;
+	while (gr.next()) {
+		if (options.maximum_entries && recordIdx == options.maximum_entries)
+			break;
+
+		var record = {};
+		if (data.actions.length > 0) {
+			var fields = gr.getFields();
+			for (var i = 0; i < fields.size(); i++) {
+				var glideElement = fields.get(i);
+				var name = glideElement.getName();
+				if (name.indexOf("sys_") == -1)
+					record[name] = gr.getValue(name);
+			}
+		}
+
+		record.sys_id = gr.getValue('sys_id');
+		record.className = gr.getRecordClassName();
+		if (options.image_field) {
+			record.image_field = gr.getDisplayValue(options.image_field);
+			if (!record.image_field)
+				record.image_field = "noimage.pngx";
+		}
+
+		if (options.display_field)
+			record.display_field = getField(gr, options.display_field);
+
+		record.secondary_fields = [];
+		options.secondary_fields.forEach(function(f) {
+			record.secondary_fields.push(getField(gr, f));
+		});
+
+		if (options.sp_page) {
+			var view = "sp";
+			if (options.view) {
+				var viewGR = new GlideRecord("sys_ui_view");
+				viewGR.get(options.view);
+				view = viewGR.getValue("name");
+			}
+			record.url = {id: options.sp_page, table: record.className, sys_id: record.sys_id, view: view};
+		} else if (options.url != '')
+			record.url = options.url;
+		else
+			record.url = null;
+
+		data.list.push(record);
+		recordIdx++;
+	}
+
+	function getField(gr, name) {
+		var f = {};
+		f.display_value = gr.getDisplayValue(name);
+		f.value = gr.getValue(name);
+		var ge = gr.getElement(name);
+			if (ge == null)
+				return f;
+
+		f.type = ge.getED().getInternalType();
+		if (f.type == "glide_date_time")
+			f.isFuture = gs.dateDiff(gr.getValue(name), gs.nowNoTZ(), true) < 0;
+		else if (f.type == "glide_date")
+			f.isFuture = gs.dateDiff(gr.getValue(name), gs.now(), true) < 0;
+		f.label = ge.getLabel();
+		return f;
+	}
+
+	function getActions() {
+		var rl = GlideRecord("sp_vlist_action");
+		rl.addQuery("sp_rectangle_vlist",$sp.getValue("sys_id"));
+		rl.query();
+		var actions = [];
+		while(rl.next()) {
+			var action = {};
+			$sp.getRecordValues(action, rl, "name,glyph,hint,url,color");
+			actions.push(action);
+		}
+		return actions;
+	}
+})()]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</application>
+        <file_path/>
+        <instance_id>2eded768db8cfc50e03ad7c8f49619dc</instance_id>
+        <instance_name>dev113953</instance_name>
+        <name>sp_widget_6be82dd01b623010a6d7c803604bcbed</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;standard&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ($scope, $location, $rootScope, spUtil, $interpolate) {
+	var c = this;
+
+	this.data.filterText = "";
+	this.showFilter = false;
+
+	this.onClick = function($event, item, url, action) {
+		$event.stopPropagation();
+		$event.preventDefault();
+		if (typeof url == "string") {
+			var urlExp = $interpolate(url);
+			url = urlExp(item);
+			$location.url(url);
+		} else if (url &amp;&amp; typeof url == "object")
+			$location.search(url);
+		else {
+			var evt = {};
+			evt.url = url;
+			evt.table = item.className;
+			evt.sys_id = item.sys_id;
+			evt.record = item;
+			evt.rectangle_id = c.options.sys_id;
+			evt.action = action;
+			// put out the selection with simple list "sl_" prefix
+			$location.search('sl_sys_id', evt.sys_id);
+			$location.search('sl_table', evt.table);
+			$location.search('spa', 1); // spa means "I've got this"
+			$rootScope.$broadcast('$sp.list.click', evt);
+		}
+	};
+
+	if (c.options.table &amp;&amp; c.options.disable_record_watcher != 'true')
+		spUtil.recordWatch($scope, c.options.table, c.options.filter);
+
+	this.getMaxShownLabel = function(maxEntries, totalCount) {
+		if (totalCount == c.data.maxCount)
+			return "${First [0] of more than [1]}".replace('[0]', maxEntries).replace('[1]', totalCount);
+
+		return "${First [0] of [1]}".replace('[0]', maxEntries).replace('[1]', totalCount);
+	};
+
+	this.seeAllPage = c.options.list_page_dv || 'list';
+	this.targetPageID = (c.options.sp_page) ? "&amp;target_page_id=" + c.options.sp_page : "";
+
+	c.getMaxHeight = function() {
+		return c.options.panel_body_height || 'none';
+	};
+
+	c.getActionColor = function(action) {
+		return "text-" + action.color;
+	};
+
+	c.update = function update() {
+			c.server.update();
+	}
+
+	c.toggleFilter = function() {
+		c.showFilter = !c.showFilter;
+	}
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.panel {
+position: relative;
+}
+
+.panel-heading i {
+  cursor: pointer;
+  position: absolute;
+  padding: 10px;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.disabled-filter {
+	color: #A0A0A0;
+}
+
+.list-group-item.ng-enter {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+
+  background-color: #c0dcfa;
+}
+
+.list-group-item.ng-enter-active {
+  background-color: #fff;
+}
+
+.hide-x-overflow {
+  overflow-x: hidden;
+}
+
+.translated-html &amp;gt; p {
+  margin: 0px;
+  padding: 0px;
+}
+
+IMG {
+  max-width: 320px;
+  max-height: 240px;
+}
+
+IMG.img-sm {
+  max-height: 40px;
+  max-width: 40px;
+}
+
+.filter-box {
+  margin-top: 10px;
+}
+
+.panel-footer {
+  .number-shown-label {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    display: inline-block;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.list-group-item &amp;gt; a {
+	display: inline-block;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance_vlist&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;table,filter,maximum_entries,display_field,color,size,glyph,sp_page&lt;/field_list&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;parkzonelist&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;ParkzoneList&lt;/name&gt;&lt;option_schema&gt;[{"name":"always_show","section":"Behavior","label":"Show even when empty","type":"boolean"},{"name":"panel_body_height","section":"Presentation","label":"List body height","type":"string"},{"name":"image_field","section":"Presentation","label":"Image field","type":"field_name"},{"name":"secondary_fields","section":"Data","label":"Secondary fields","type":"field_list"},{"name":"rounded_images","section":"Presentation","label":"Rounded images","type":"boolean"},{"displayValue":"Page","name":"list_page","section":"Data","label":"List page","type":"reference","value":"sp_page","ed":{"reference":"sp_page"}},{"name":"hide_footer","section":"Presentation","label":"Hide Footer","type":"boolean"},{"displayValue":"UI View","hint":"View to use when target page is a form","name":"view","section":"Behavior","label":"View","type":"reference","value":"sys_ui_view","ed":{"reference":"sys_ui_view"}},{"hint":"If checked, Simple List will not automatically updated based on changes to the filtered records","name":"disable_record_watcher","section":"Behavior","label":"Disable record watcher","type":"boolean"},{"name":"filter_acls","section":"Data","default_value":"false","label":"Enforce field-level Read ACLs on Filter query terms (may alter the query for unprivileged users)","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+	data.filterMsg = gs.getMessage("Filter...");
+	data.viewAllMsg = gs.getMessage("View all");
+	if (gs.nil(options.hide_footer))
+	    options.hide_footer = false;
+	options.hide_footer = (options.hide_footer == "true" || options.hide_footer == true);
+	options.table = $sp.getParameter('t') || options.table;
+	if (!options.table)
+		return;
+
+	var gr = new GlideRecordSecure(options.table); // does ACL checking for us
+	if (!gr.isValid()) {
+		data.isValid = false;
+		return;
+	} else
+		data.isValid = true;
+	// grTemp is used to check isValidField since using GlideRecordSecure fails for date/time fields
+	var grTemp = new GlideRecord(options.table);
+	if (options.filter_acls == "true")
+		gr = $sp.addQueryString(gr, options.filter);
+	else
+		gr.addEncodedQuery(options.filter);
+	
+	var gp = gr.getED(); //
+options.title = options.title || gp.getPlural(); 
+//	options.title = options.title || gr.getPlural();
+	options.display_field = $sp.getParameter('f') || options.display_field;
+	if (!options.display_field || !grTemp.isValidField(options.display_field))
+		options.display_field = gr.getDisplayName();
+
+	if (input &amp;&amp; input.filterText)
+		gr.addEncodedQuery(options.display_field + "LIKE" + input.filterText)
+
+
+options.title = options.title || gp.getPlural(); 
+	//options.title = options.title || gr.getPlural();
+	options.secondary_fields = options.secondary_fields || "";
+	options.secondary_fields = options.secondary_fields.split(",");
+	if (!options.order_by || !grTemp.isValidField(options.order_by))
+		options.order_by = options.display_field;
+
+	// Set ID of sp_page from option schema
+	if (options.list_page) {
+		var sp_page = GlideRecord('sp_page');
+		if (sp_page.get(options.list_page))
+			options.list_page_dv = sp_page.getDisplayValue('id');
+	}
+
+	// redo query with limit
+	if (options.order_direction == "asc")
+		gr.orderBy(options.order_by);
+	else
+		gr.orderByDesc(options.order_by);
+
+	data.maxCount = 500;
+	gr.setLimit(data.maxCount);
+	gr.query();
+
+	data.count = gr.getRowCount();
+	data.actions = getActions();
+	data.list = [];
+	var recordIdx = 0;
+	while (gr.next()) {
+		if (options.maximum_entries &amp;&amp; recordIdx == options.maximum_entries)
+			break;
+
+		var record = {};
+		if (data.actions.length &gt; 0) {
+			var fields = gr.getFields();
+			for (var i = 0; i &lt; fields.size(); i++) {
+				var glideElement = fields.get(i);
+				var name = glideElement.getName();
+				if (name.indexOf("sys_") == -1)
+					record[name] = gr.getValue(name);
+			}
+		}
+
+		record.sys_id = gr.getValue('sys_id');
+		record.className = gr.getRecordClassName();
+		if (options.image_field) {
+			record.image_field = gr.getDisplayValue(options.image_field);
+			if (!record.image_field)
+				record.image_field = "noimage.pngx";
+		}
+
+		if (options.display_field)
+			record.display_field = getField(gr, options.display_field);
+
+		record.secondary_fields = [];
+		options.secondary_fields.forEach(function(f) {
+			record.secondary_fields.push(getField(gr, f));
+		});
+
+		if (options.sp_page) {
+			var view = "sp";
+			if (options.view) {
+				var viewGR = new GlideRecord("sys_ui_view");
+				viewGR.get(options.view);
+				view = viewGR.getValue("name");
+			}
+			record.url = {id: options.sp_page, table: record.className, sys_id: record.sys_id, view: view};
+		} else if (options.url != '')
+			record.url = options.url;
+		else
+			record.url = null;
+
+		data.list.push(record);
+		recordIdx++;
+	}
+
+	function getField(gr, name) {
+		var f = {};
+		f.display_value = gr.getDisplayValue(name);
+		f.value = gr.getValue(name);
+		var ge = gr.getElement(name);
+			if (ge == null)
+				return f;
+
+		f.type = ge.getED().getInternalType();
+		if (f.type == "glide_date_time")
+			f.isFuture = gs.dateDiff(gr.getValue(name), gs.nowNoTZ(), true) &lt; 0;
+		else if (f.type == "glide_date")
+			f.isFuture = gs.dateDiff(gr.getValue(name), gs.now(), true) &lt; 0;
+		f.label = ge.getLabel();
+		return f;
+	}
+
+	function getActions() {
+		var rl = GlideRecord("sp_vlist_action");
+		rl.addQuery("sp_rectangle_vlist",$sp.getValue("sys_id"));
+		rl.query();
+		var actions = [];
+		while(rl.next()) {
+			var action = {};
+			$sp.getRecordValues(action, rl, "name,glyph,hint,url,color");
+			actions.push(action);
+		}
+		return actions;
+	}
+})()]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-09-08 08:25:49&lt;/sys_created_on&gt;&lt;sys_id&gt;6be82dd01b623010a6d7c803604bcbed&lt;/sys_id&gt;&lt;sys_mod_count&gt;17&lt;/sys_mod_count&gt;&lt;sys_name&gt;ParkzoneList&lt;/sys_name&gt;&lt;sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra"&gt;f7e434712fd23010e9f0d2172799b66b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="G4-Parkraumbewirtschaftungssystem"&gt;f7e434712fd23010e9f0d2172799b66b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_6be82dd01b623010a6d7c803604bcbed&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-09-08 09:55:56&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div  ng-if="showWidget == 'parkzonereg'" class="panel panel-{{::c.options.color}} b" ng-if="c.data.isValid &amp;&amp; (c.options.always_show == 'true' || c.options.always_show == true || c.data.filterText || c.data.list.length)"&gt;
+(function () {
+	data.filterMsg = gs.getMessage("Filter...");
+	data.viewAllMsg = gs.getMessage("View all");
+	if (gs.nil(options.hide_footer))
+	    options.hide_footer = false;
+	options.hide_footer = (options.hide_footer == "true" || options.hide_footer == true);
+	options.table = $sp.getParameter('t') || options.table;
+	if (!options.table)
+		return;
+
+	var gr = new GlideRecordSecure(options.table); // does ACL checking for us
+	if (!gr.isValid()) {
+		data.isValid = false;
+		return;
+	} else
+		data.isValid = true;
+	// grTemp is used to check isValidField since using GlideRecordSecure fails for date/time fields
+	var grTemp = new GlideRecord(options.table);
+	if (options.filter_acls == "true")
+		gr = $sp.addQueryString(gr, options.filter);
+	else
+		gr.addEncodedQuery(options.filter);
+	options.title = options.title || gr.getPlural();
+	options.display_field = $sp.getParameter('f') || options.display_field;
+	if (!options.display_field || !grTemp.isValidField(options.display_field))
+		options.display_field = gr.getDisplayName();
+
+	if (input &amp;&amp; input.filterText)
+		gr.addEncodedQuery(options.display_field + "LIKE" + input.filterText)
+
+	options.title = options.title || gr.getPlural();
+	options.secondary_fields = options.secondary_fields || "";
+	options.secondary_fields = options.secondary_fields.split(",");
+	if (!options.order_by || !grTemp.isValidField(options.order_by))
+		options.order_by = options.display_field;
+
+	// Set ID of sp_page from option schema
+	if (options.list_page) {
+		var sp_page = GlideRecord('sp_page');
+		if (sp_page.get(options.list_page))
+			options.list_page_dv = sp_page.getDisplayValue('id');
+	}
+
+	// redo query with limit
+	if (options.order_direction == "asc")
+		gr.orderBy(options.order_by);
+	else
+		gr.orderByDesc(options.order_by);
+
+	data.maxCount = 500;
+	gr.setLimit(data.maxCount);
+	gr.query();
+
+	data.count = gr.getRowCount();
+	data.actions = getActions();
+	data.list = [];
+	var recordIdx = 0;
+	while (gr.next()) {
+		if (options.maximum_entries &amp;&amp; recordIdx == options.maximum_entries)
+			break;
+
+		var record = {};
+		if (data.actions.length &gt; 0) {
+			var fields = gr.getFields();
+			for (var i = 0; i &lt; fields.size(); i++) {
+				var glideElement = fields.get(i);
+				var name = glideElement.getName();
+				if (name.indexOf("sys_") == -1)
+					record[name] = gr.getValue(name);
+			}
+		}
+
+		record.sys_id = gr.getValue('sys_id');
+		record.className = gr.getRecordClassName();
+		if (options.image_field) {
+			record.image_field = gr.getDisplayValue(options.image_field);
+			if (!record.image_field)
+				record.image_field = "noimage.pngx";
+		}
+
+		if (options.display_field)
+			record.display_field = getField(gr, options.display_field);
+
+		record.secondary_fields = [];
+		options.secondary_fields.forEach(function(f) {
+			record.secondary_fields.push(getField(gr, f));
+		});
+
+		if (options.sp_page) {
+			var view = "sp";
+			if (options.view) {
+				var viewGR = new GlideRecord("sys_ui_view");
+				viewGR.get(options.view);
+				view = viewGR.getValue("name");
+			}
+			record.url = {id: options.sp_page, table: record.className, sys_id: record.sys_id, view: view};
+		} else if (options.url != '')
+			record.url = options.url;
+		else
+			record.url = null;
+
+		data.list.push(record);
+		recordIdx++;
+	}
+
+	function getField(gr, name) {
+		var f = {};
+		f.display_value = gr.getDisplayValue(name);
+		f.value = gr.getValue(name);
+		var ge = gr.getElement(name);
+			if (ge == null)
+				return f;
+
+		f.type = ge.getED().getInternalType();
+		if (f.type == "glide_date_time")
+			f.isFuture = gs.dateDiff(gr.getValue(name), gs.nowNoTZ(), true) &lt; 0;
+		else if (f.type == "glide_date")
+			f.isFuture = gs.dateDiff(gr.getValue(name), gs.now(), true) &lt; 0;
+		f.label = ge.getLabel();
+		return f;
+	}
+
+	function getActions() {
+		var rl = GlideRecord("sp_vlist_action");
+		rl.addQuery("sp_rectangle_vlist",$sp.getValue("sys_id"));
+		rl.query();
+		var actions = [];
+		while(rl.next()) {
+			var action = {};
+			$sp.getRecordValues(action, rl, "name,glyph,hint,url,color");
+			actions.push(action);
+		}
+		return actions;
+	}
+})()]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1166180839</payload_hash>
+        <record_name>ParkzoneList</record_name>
+        <reverted_from/>
+        <source>b3db70791b563010a6d7c803604bcb8b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-08 09:55:56</sys_created_on>
+        <sys_id>ef8dbdd01ba23010a6d7c803604bcbe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bc4d5e03d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-08 09:55:56</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>2b8dbdd0b0a230100b97f97232e71be3</update_guid>
+        <update_guid_history>2b8dbdd0b0a230100b97f97232e71be3:-1166180839,fbcc79d02fa2301087d3fcb1361d4240:-724068720,b65ab1903da230100b0128fcb5d1bb6f:329245989,33d93d5059a23010524e7419332fe378:-2145076317,c5897150a2a2301000b04ead4d5ac020:-1020808039,c529b15024a23010dc9c472fdb414b90:-1500224961,cf09fd102ea23010d742868aeb44e841:-1989659343,0af83d10a2a230100f8d467f0138a3d5:-1001512048,939839982f623010ff30dc07176c1dcd:29781487,7841f558e0623010ef11d69bff8c03aa:2130680979,67013598aa623010279698b603f216fe:-2004142118,275b2d5452623010326f72e99f366ebe:-1082265718,e9fae554676230101bae5e3b36cab897:1043174290,44ea6554626230109e79dc216648cf38:-597246062,235aed147b623010619bb645cb8cddd4:-360817631,2b3aedd01f62301028f06bb6830ed85d:1204211070,e32a6d146b623010a9675ac7213afb97:649404685,a3e82dd02b623010a62d6e871cf792ef:810496114</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="ParkzoneList">883b22181b263010a6d7c803604bcb66</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-08 13:15:18</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>8edfd214de37495b9a7327dfb958c379</sys_id>
+        <sys_metadata>6be82dd01b623010a6d7c803604bcbed</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ParkzoneList</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_scope_delete display_value="">00ccbce5a6b94bc0a6cfe0c5ed36e440</sys_scope_delete>
+        <sys_update_name>sp_widget_6be82dd01b623010a6d7c803604bcbed</sys_update_name>
+        <sys_update_version display_value="sp_widget_6be82dd01b623010a6d7c803604bcbed">ef8dbdd01ba23010a6d7c803604bcbe3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-08 13:15:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

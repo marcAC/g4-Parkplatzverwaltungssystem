@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_vlist">
+    <sp_instance_vlist action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <display_field>name</display_field>
+        <field_list>name,behindertenparkplaetze,kapazitat,p_id,preis</field_list>
+        <filter/>
+        <glyph>check</glyph>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>1</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">4a60d1901b223010a6d7c803604bcbb7</sp_column>
+        <sp_page display_value="form">ed5f8ec347730200ba13a5554ee49046</sp_page>
+        <sp_widget display_value="Simple List">5b255672cb03020000f8d856634c9c28</sp_widget>
+        <sys_class_name>sp_instance_vlist</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-08 07:25:35</sys_created_on>
+        <sys_id>812b11981b223010a6d7c803604bcbb0</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_update_name>sp_instance_vlist_812b11981b223010a6d7c803604bcbb0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-08 10:03:41</sys_updated_on>
+        <table>x_684800_g4_parkra_parkzone</table>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"always_show": {
+		"value": "true",
+		"displayValue": "true"
+	},
+	"panel_body_height": {
+		"value": "",
+		"displayValue": ""
+	},
+	"image_field": {
+		"value": "",
+		"displayValue": ""
+	},
+	"secondary_fields": {
+		"value": "kapazitat,behindertenparkplaetze,preis",
+		"displayValue": "kapazitat,behindertenparkplaetze,preis"
+	},
+	"rounded_images": {
+		"value": "true",
+		"displayValue": "true"
+	},
+	"list_page": {
+		"value": "",
+		"displayValue": ""
+	},
+	"hide_footer": {
+		"value": "",
+		"displayValue": ""
+	},
+	"view": {
+		"value": "020581076de620100acb70b353433007",
+		"displayValue": "Advanced View"
+	},
+	"disable_record_watcher": {
+		"value": "",
+		"displayValue": ""
+	},
+	"filter_acls": {
+		"value": "false",
+		"displayValue": "false"
+	}
+}]]></widget_parameters>
+    </sp_instance_vlist>
+    <sys_translated_text action="DELETE" query="documentkey=812b11981b223010a6d7c803604bcbb0"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</application>
+        <file_path/>
+        <instance_id>2eded768db8cfc50e03ad7c8f49619dc</instance_id>
+        <instance_name>dev113953</instance_name>
+        <name>sp_instance_vlist_812b11981b223010a6d7c803604bcbb0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_vlist"&gt;&lt;sp_instance_vlist action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;primary&lt;/color&gt;&lt;css/&gt;&lt;display_field&gt;name&lt;/display_field&gt;&lt;field_list&gt;name,behindertenparkplaetze,kapazitat,p_id,preis&lt;/field_list&gt;&lt;filter/&gt;&lt;glyph&gt;check&lt;/glyph&gt;&lt;id/&gt;&lt;maximum_entries&gt;5&lt;/maximum_entries&gt;&lt;order&gt;1&lt;/order&gt;&lt;order_by/&gt;&lt;order_direction&gt;asc&lt;/order_direction&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;4a60d1901b223010a6d7c803604bcbb7&lt;/sp_column&gt;&lt;sp_page display_value="form"&gt;ed5f8ec347730200ba13a5554ee49046&lt;/sp_page&gt;&lt;sp_widget display_value="Simple List"&gt;5b255672cb03020000f8d856634c9c28&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_vlist&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-09-08 07:25:35&lt;/sys_created_on&gt;&lt;sys_id&gt;812b11981b223010a6d7c803604bcbb0&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra"&gt;f7e434712fd23010e9f0d2172799b66b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="G4-Parkraumbewirtschaftungssystem"&gt;f7e434712fd23010e9f0d2172799b66b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_vlist_812b11981b223010a6d7c803604bcbb0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-09-08 10:03:41&lt;/sys_updated_on&gt;&lt;table&gt;x_684800_g4_parkra_parkzone&lt;/table&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"always_show": {
+		"value": "true",
+		"displayValue": "true"
+	},
+	"panel_body_height": {
+		"value": "",
+		"displayValue": ""
+	},
+	"image_field": {
+		"value": "",
+		"displayValue": ""
+	},
+	"secondary_fields": {
+		"value": "kapazitat,behindertenparkplaetze,preis",
+		"displayValue": "kapazitat,behindertenparkplaetze,preis"
+	},
+	"rounded_images": {
+		"value": "true",
+		"displayValue": "true"
+	},
+	"list_page": {
+		"value": "",
+		"displayValue": ""
+	},
+	"hide_footer": {
+		"value": "",
+		"displayValue": ""
+	},
+	"view": {
+		"value": "020581076de620100acb70b353433007",
+		"displayValue": "Advanced View"
+	},
+	"disable_record_watcher": {
+		"value": "",
+		"displayValue": ""
+	},
+	"filter_acls": {
+		"value": "false",
+		"displayValue": "false"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_vlist&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=812b11981b223010a6d7c803604bcbb0"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>867820332</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>b3db70791b563010a6d7c803604bcb8b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-08 10:03:42</sys_created_on>
+        <sys_id>d55ffd541ba23010a6d7c803604bcb05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bc4dcfc460000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-08 10:03:42</sys_updated_on>
+        <type>Instance of Simple List</type>
+        <update_guid>115ffd54eaa23010a08979eeedd06705</update_guid>
+        <update_guid_history>115ffd54eaa23010a08979eeedd06705:867820332,6eddb9144ba23010ec362ce018203281:-954160487,667c6994fc623010ea317971133066e1:867820332,ae5c69949c6230107c76712e963dfab5:-1764882810,313ce594d4623010071668ed9875a7df:1598103288,4200211c7a223010621e59d9934e1800:476469185,b53e151cde223010ec25717c3db142a5:842475758,8bed111c95223010b64750fa7bbed421:-781410698,d6adddd82e223010cb4a64a57ed8df85:1017336296,e96dd5d8bd223010a083e39a923679f5:-386023329,ae2d95d862223010c2bddb4d6d3555db:1617975081,fc0d95d862223010421a6136279d21c8:131187336,aeec55d8aa2230105d0bfba944a41e2b:-1854721662,a27cdd9870223010b8c6376089d9edc8:237174534,d45c5d98e2223010058dfb6d557dd0d7:-2045648531,052b11982e223010c80832d532f771b2:-337939828</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">3ec2c6181ba23010a6d7c803604bcb8c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-08 10:18:49</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_vlist">sp_instance_vlist</sys_db_object>
+        <sys_id>3112d7627e1d45c089897699e0439da4</sys_id>
+        <sys_metadata>812b11981b223010a6d7c803604bcbb0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_scope_delete display_value="">00ccbce5a6b94bc0a6cfe0c5ed36e440</sys_scope_delete>
+        <sys_update_name>sp_instance_vlist_812b11981b223010a6d7c803604bcbb0</sys_update_name>
+        <sys_update_version display_value="sp_instance_vlist_812b11981b223010a6d7c803604bcbb0">d55ffd541ba23010a6d7c803604bcb05</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-08 10:18:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

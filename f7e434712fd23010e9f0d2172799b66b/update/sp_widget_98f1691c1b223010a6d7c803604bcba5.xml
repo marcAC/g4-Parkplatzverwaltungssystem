@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($rootScope,$scope, $timeout) {
+  var c = this;
+	
+	c.selectedPill='parkzonedatatable';
+	
+	$timeout(function(){
+		$rootscope.$broadcast('showHideWidget','parkzonedatatable');
+			},500);
+	
+	$scope.selectPill=function(selection){
+		c.selectedPill=selection;
+		$rootscope.broadcast('showHideWidget', selection);
+	};
+	
+		
+	}
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.vertical-menu
+{
+width: 200px;
+}
+
+.vertical-menu a{
+background-color: #20B2AA;
+  color:#ffffff;
+  display:block;
+  padding:12px;
+}
+
+.vertical-menu a:hover{
+background-color: black;
+}
+
+.vertical-menu a:active{
+background-color: #20B2AA;
+  color: whight;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>listofmenu_admin</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>ListofMenu_admin</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-08 07:55:59</sys_created_on>
+        <sys_id>98f1691c1b223010a6d7c803604bcba5</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>ListofMenu_admin</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_update_name>sp_widget_98f1691c1b223010a6d7c803604bcba5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-08 12:41:42</sys_updated_on>
+        <template><![CDATA[<div class="vertical-menu">
+<a href class="each-pill" ng-class="{'active : '')" ng-click="selectPill('')">Parkzone anlegen</a>
+<a href class="each-pill" ng-class="{'active :'parkzonedatatable'}" ng-click="selectPill('parkzonedatatable')">Parkzone anzeigen</a>
+<a href class="each-pill" ng-class="{'active : ''}" ng-click="selectPill('')">Benutzer anlegen</a>
+<a href class="each-pill" ng-class="{'active : ''}" ng-click="selectPill('')">Alle Benutzer anzeigen</a>
+<a href class="each-pill" ng-class="{'active : ''}" ng-click="selectPill('')">Alle Resevierung anzeigen</a>
+
+</div>]]></template>
+    </sp_widget>
+</record_update>
