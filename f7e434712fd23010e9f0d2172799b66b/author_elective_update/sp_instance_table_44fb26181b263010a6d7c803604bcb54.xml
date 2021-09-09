@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table">
+    <sp_instance_table action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <display_field/>
+        <field_list/>
+        <filter/>
+        <glyph>user</glyph>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>3</order>
+        <order_by>x_684800_g4_parkra_rolle</order_by>
+        <order_direction>desc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">945a6aa41bee3010a6d7c803604bcb24</sp_column>
+        <sp_page display_value="form">ed5f8ec347730200ba13a5554ee49046</sp_page>
+        <sp_widget display_value="User Data Table">48faaad41b263010a6d7c803604bcb6d</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-08 13:18:35</sys_created_on>
+        <sys_id>44fb26181b263010a6d7c803604bcb54</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Benutzer</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_update_name>sp_instance_table_44fb26181b263010a6d7c803604bcb54</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 07:51:01</sys_updated_on>
+        <table>sys_user</table>
+        <title>Benutzer</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_table>
+    <sys_translated_text action="DELETE" query="documentkey=44fb26181b263010a6d7c803604bcb54"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</application>
+        <file_path/>
+        <instance_id>2eded768db8cfc50e03ad7c8f49619dc</instance_id>
+        <instance_name>dev113953</instance_name>
+        <name>sp_instance_table_44fb26181b263010a6d7c803604bcb54</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table"><sp_instance_table action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>primary</color><css/><display_field/><field_list/><filter/><glyph>user</glyph><id/><maximum_entries>5</maximum_entries><order>3</order><order_by>x_684800_g4_parkra_rolle</order_by><order_direction>desc</order_direction><roles/><short_description/><size>md</size><sp_column display_value="2">945a6aa41bee3010a6d7c803604bcb24</sp_column><sp_page display_value="form">ed5f8ec347730200ba13a5554ee49046</sp_page><sp_widget display_value="User Data Table">48faaad41b263010a6d7c803604bcb6d</sp_widget><sys_class_name>sp_instance_table</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-09-08 13:18:35</sys_created_on><sys_id>44fb26181b263010a6d7c803604bcb54</sys_id><sys_mod_count>10</sys_mod_count><sys_name>Benutzer</sys_name><sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package><sys_policy/><sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope><sys_update_name>sp_instance_table_44fb26181b263010a6d7c803604bcb54</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-09-09 07:51:01</sys_updated_on><table>sys_user</table><title>Benutzer</title><url/><widget_parameters/></sp_instance_table><sys_translated_text action="delete_multiple" query="documentkey=44fb26181b263010a6d7c803604bcb54"/></record_update>]]></payload>
+        <payload_hash>685599295</payload_hash>
+        <record_name>Benutzer</record_name>
+        <reverted_from/>
+        <source>b3db70791b563010a6d7c803604bcb8b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 07:51:01</sys_created_on>
+        <sys_id>638a2ea41bee3010a6d7c803604bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bc989e0d30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 07:51:01</sys_updated_on>
+        <type>Instance with Table</type>
+        <update_guid>ab8a2ea459ee3010fbcc122fedbf10d9</update_guid>
+        <update_guid_history>ab8a2ea459ee3010fbcc122fedbf10d9:685599295,a28a2ea45aee3010e8c84e8129553036:84606526,018aeaa473ee301056b436332e7f22f5:-516386243,41622eec5aae30107eea12a6adb35cb9:-1332867665,265e66981326301079b8a8b95154b9d8:-1663259911,97edea5839263010455ab3095de81d2e:1907312351,8fbdae585e263010b2c4a8325855efab:982383591,d23d26589b263010ab52d40eb02f7052:1509392656,4bdc265891263010369c3170a887654d:-1614347055,f1fbaa184c263010a569cb18de59c242:-1779358517,c0fb2618f2263010e2a4a7efbf6e6b56:-1739389204</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Benutzer">457b6ae41bee3010a6d7c803604bcbf6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 07:54:57</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_table">sp_instance_table</sys_db_object>
+        <sys_id>31cf25ac6d8a4da09740f7301fdf7840</sys_id>
+        <sys_metadata>44fb26181b263010a6d7c803604bcb54</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Benutzer</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_scope_delete display_value="">00ccbce5a6b94bc0a6cfe0c5ed36e440</sys_scope_delete>
+        <sys_update_name>sp_instance_table_44fb26181b263010a6d7c803604bcb54</sys_update_name>
+        <sys_update_version display_value="sp_instance_table_44fb26181b263010a6d7c803604bcb54">638a2ea41bee3010a6d7c803604bcbda</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 07:54:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

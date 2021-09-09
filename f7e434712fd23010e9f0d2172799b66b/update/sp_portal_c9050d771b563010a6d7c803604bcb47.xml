@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
     <sp_portal action="INSERT_OR_UPDATE">
-        <css_variables>$brand-primary: #696969;&#13;
+        <css_variables>$body-bg:#bdc0c4;
+$state-success-text:#5cb85c;
+$sp-homepage-bg:#fff;
+$sp-navbar-divider-color:#455464;
+$text-color:#717171;
+$sp-logo-margin-y:5px;
+$navbar-inverse-link-hover-color:#ffffff;
+$panel-bg:#fff;
+$brand-success:#0a5d0c;
+$brand-warning:#9E6817;
+$brand-danger:#B12F2C;
+$sp-tagline-color:#717171;
+$brand-info:#0F7D8B;
+$link-color:#045AAE;
+$sp-logo-margin-x:9px;
+$btn-default-bg:#fff;
+$text-muted:#646567;
+$brand-primary:#696969;&#13;
 $navbar-inverse-bg:#20B2AA;&#13;
-$navbar-inverse-link-color: #ffffff;&#13;
+$navbar-inverse-link-color:#ffffff;&#13;
 </css_variables>
         <default>false</default>
         <enable_ais>false</enable_ais>
@@ -11,7 +28,7 @@ $navbar-inverse-link-color: #ffffff;&#13;
         <icon>67427d371bd63010a6d7c803604bcb56</icon>
         <kb_knowledge_base/>
         <kb_knowledge_page display_value="kb_view2">26c2e030d7201200a9addd173e24d437</kb_knowledge_page>
-        <login_page display_value="index">46cc384147532100ba13a5554ee49009</login_page>
+        <login_page display_value="login">6995a144cb11120000f8d856634c9c25</login_page>
         <logo>6485f5b71bd63010a6d7c803604bcb6f</logo>
         <notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page>
         <quick_start_config/>
@@ -26,14 +43,14 @@ $navbar-inverse-link-color: #ffffff;&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-06 16:37:05</sys_created_on>
         <sys_id>c9050d771b563010a6d7c803604bcb47</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>Parkraumbewirtschaftung Portal </sys_name>
         <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
         <sys_policy/>
         <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
         <sys_update_name>sp_portal_c9050d771b563010a6d7c803604bcb47</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-06 20:05:54</sys_updated_on>
+        <sys_updated_on>2021-09-09 07:29:11</sys_updated_on>
         <theme display_value="Stock - High Contrast">f84873986711320023c82e08f585ef6a</theme>
         <title>Parkraumbewirtschaftung Portal </title>
         <ts_index_group/>

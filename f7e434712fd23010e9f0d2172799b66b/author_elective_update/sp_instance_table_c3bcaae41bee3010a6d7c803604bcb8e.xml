@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table">
+    <sp_instance_table action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <display_field/>
+        <field_list>reservierungsnummer,usernummer,parkzone,beginn,ende,behinderung</field_list>
+        <filter/>
+        <glyph>check</glyph>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>6</order>
+        <order_by>reservierungsnummer</order_by>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">65ace6281bee3010a6d7c803604bcbb3</sp_column>
+        <sp_page display_value="form">ed5f8ec347730200ba13a5554ee49046</sp_page>
+        <sp_widget display_value="Reservierung Data Table">9e7aa6d41b263010a6d7c803604bcb1d</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 08:00:33</sys_created_on>
+        <sys_id>c3bcaae41bee3010a6d7c803604bcb8e</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Reservierung</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_update_name>sp_instance_table_c3bcaae41bee3010a6d7c803604bcb8e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 10:30:21</sys_updated_on>
+        <table>x_684800_g4_parkra_reservierung</table>
+        <title>Reservierung</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_table>
+    <sys_translated_text action="DELETE" query="documentkey=c3bcaae41bee3010a6d7c803604bcb8e"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</application>
+        <file_path/>
+        <instance_id>2eded768db8cfc50e03ad7c8f49619dc</instance_id>
+        <instance_name>dev113953</instance_name>
+        <name>sp_instance_table_c3bcaae41bee3010a6d7c803604bcb8e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table"><sp_instance_table action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>primary</color><css/><display_field/><field_list>reservierungsnummer,usernummer,parkzone,beginn,ende,behinderung</field_list><filter/><glyph>check</glyph><id/><maximum_entries>5</maximum_entries><order>6</order><order_by>reservierungsnummer</order_by><order_direction>asc</order_direction><roles/><short_description/><size>md</size><sp_column display_value="2">65ace6281bee3010a6d7c803604bcbb3</sp_column><sp_page display_value="form">ed5f8ec347730200ba13a5554ee49046</sp_page><sp_widget display_value="Reservierung Data Table">9e7aa6d41b263010a6d7c803604bcb1d</sp_widget><sys_class_name>sp_instance_table</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-09-09 08:00:33</sys_created_on><sys_id>c3bcaae41bee3010a6d7c803604bcb8e</sys_id><sys_mod_count>14</sys_mod_count><sys_name>Reservierung</sys_name><sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package><sys_policy/><sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope><sys_update_name>sp_instance_table_c3bcaae41bee3010a6d7c803604bcb8e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-09-09 10:30:21</sys_updated_on><table>x_684800_g4_parkra_reservierung</table><title>Reservierung</title><url/><widget_parameters/></sp_instance_table><sys_translated_text action="delete_multiple" query="documentkey=c3bcaae41bee3010a6d7c803604bcb8e"/></record_update>]]></payload>
+        <payload_hash>2087125100</payload_hash>
+        <record_name>Reservierung</record_name>
+        <reverted_from/>
+        <source>b3db70791b563010a6d7c803604bcb8b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 10:30:21</sys_created_on>
+        <sys_id>e90f0ba41b627010a6d7c803604bcb0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bca1bbf5d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 10:30:21</sys_updated_on>
+        <type>Instance with Table</type>
+        <update_guid>250f0ba4cc627010b8a2b7653ca18c0c</update_guid>
+        <update_guid_history>250f0ba4cc627010b8a2b7653ca18c0c:2087125100,a40fc7a40862701081a2d4b4ff0fa1df:1051842699,5c4e4b64336270109e0973107ba50bbf:16560298,6d0ec7641a627010b0b8fe4ed1315504:1051842699,09ad43641f627010cbcb18be2593f3f4:2087125100,729d436436627010e574faeebc64e955:-1172559795,9d9d0364916270109d907a51a11a43d8:2087125100,bf8d0364b1627010250958c34dfbb598:-1172559795,e17dcf245a627010bad5967875029e65:2087125100,1039c7607c62701082989fbc71cc488c:-1172559795,cad60f6c2b22701092f04335f409846c:-137277394,20960b6cd8227010de44ad0ca649ba92:-1172559795,f04036e8f4ee3010863b99083bee7b6f:898005007,42ccaa28a7ee3010d9dcdd3639ea1035:1104661282,0bbc6a28e8ee30107bfeaeceeed3bd9f:-636879805</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Reservierung">8e0fc7a41b627010a6d7c803604bcbfe</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 10:30:24</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_table">sp_instance_table</sys_db_object>
+        <sys_id>48136031f66a4390af8a727c06840984</sys_id>
+        <sys_metadata>c3bcaae41bee3010a6d7c803604bcb8e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reservierung</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_scope_delete display_value="">00ccbce5a6b94bc0a6cfe0c5ed36e440</sys_scope_delete>
+        <sys_update_name>sp_instance_table_c3bcaae41bee3010a6d7c803604bcb8e</sys_update_name>
+        <sys_update_version display_value="sp_instance_table_c3bcaae41bee3010a6d7c803604bcb8e">e90f0ba41b627010a6d7c803604bcb0c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 10:30:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

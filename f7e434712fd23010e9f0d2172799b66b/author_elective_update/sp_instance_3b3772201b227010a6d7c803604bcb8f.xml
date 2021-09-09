@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name>Instance with Link</class_name>
+        <color>default</color>
+        <css/>
+        <glyph>user</glyph>
+        <id/>
+        <order>2</order>
+        <roles>x_684800_g4_parkra.administrator</roles>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">65ace6281bee3010a6d7c803604bcbb3</sp_column>
+        <sp_widget display_value="link-button">abc50de6d702120023c84f80de61036a</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 08:54:42</sys_created_on>
+        <sys_id>3b3772201b227010a6d7c803604bcb8f</sys_id>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_name>Benutzer anlegen</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_update_name>sp_instance_3b3772201b227010a6d7c803604bcb8f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 09:53:25</sys_updated_on>
+        <title>Benutzer anlegen</title>
+        <url>https://dev113953.service-now.com/nav_to.do?uri=sys_user.do?sys_id%3D-1%26sysparm_stack%3Dsys_user_list.do</url>
+        <widget_parameters><![CDATA[{
+	"disableUIActions": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"showFormView": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"omitHeaderOptions": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"link_template": {
+		"value": "Circle Icon",
+		"displayValue": "Circle Icon"
+	},
+	"href": {
+		"value": "https://dev113953.service-now.com/nav_to.do?uri=%2Fsys_user.do%3Fsys_id%3D-1%26sysparm_stack%3Dsys_user_list.do",
+		"displayValue": "https://dev113953.service-now.com/nav_to.do?uri=%2Fsys_user.do%3Fsys_id%3D-1%26sysparm_stack%3Dsys_user_list.do"
+	},
+	"button_text": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=3b3772201b227010a6d7c803604bcb8f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</application>
+        <file_path/>
+        <instance_id>2eded768db8cfc50e03ad7c8f49619dc</instance_id>
+        <instance_name>dev113953</instance_name>
+        <name>sp_instance_3b3772201b227010a6d7c803604bcb8f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name&gt;Instance with Link&lt;/class_name&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph&gt;user&lt;/glyph&gt;&lt;id/&gt;&lt;order&gt;2&lt;/order&gt;&lt;roles&gt;x_684800_g4_parkra.administrator&lt;/roles&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="2"&gt;65ace6281bee3010a6d7c803604bcbb3&lt;/sp_column&gt;&lt;sp_widget display_value="link-button"&gt;abc50de6d702120023c84f80de61036a&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-09-09 08:54:42&lt;/sys_created_on&gt;&lt;sys_id&gt;3b3772201b227010a6d7c803604bcb8f&lt;/sys_id&gt;&lt;sys_mod_count&gt;33&lt;/sys_mod_count&gt;&lt;sys_name&gt;Benutzer anlegen&lt;/sys_name&gt;&lt;sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra"&gt;f7e434712fd23010e9f0d2172799b66b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="G4-Parkraumbewirtschaftungssystem"&gt;f7e434712fd23010e9f0d2172799b66b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_3b3772201b227010a6d7c803604bcb8f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-09-09 09:53:25&lt;/sys_updated_on&gt;&lt;title&gt;Benutzer anlegen&lt;/title&gt;&lt;url&gt;https://dev113953.service-now.com/nav_to.do?uri=sys_user.do?sys_id%3D-1%26sysparm_stack%3Dsys_user_list.do&lt;/url&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"disableUIActions": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"showFormView": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"omitHeaderOptions": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"link_template": {
+		"value": "Circle Icon",
+		"displayValue": "Circle Icon"
+	},
+	"href": {
+		"value": "https://dev113953.service-now.com/nav_to.do?uri=%2Fsys_user.do%3Fsys_id%3D-1%26sysparm_stack%3Dsys_user_list.do",
+		"displayValue": "https://dev113953.service-now.com/nav_to.do?uri=%2Fsys_user.do%3Fsys_id%3D-1%26sysparm_stack%3Dsys_user_list.do"
+	},
+	"button_text": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=3b3772201b227010a6d7c803604bcb8f"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-822696825</payload_hash>
+        <record_name>Benutzer anlegen</record_name>
+        <reverted_from/>
+        <source>b3db70791b563010a6d7c803604bcb8b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 09:53:25</sys_created_on>
+        <sys_id>a0960b6c1b227010a6d7c803604bcb78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bc9f9f13e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 09:53:25</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>e8960b6c5322701037ce27b70075e777</update_guid>
+        <update_guid_history>e8960b6c5322701037ce27b70075e777:-822696825,7305c72c4522701023c7c34c65c09283:-36009169,20e4032c572270101f5348a5dd428b28:-781034089,b0a4432c26227010df48a11d4ad0983d:-291430978,ee848fe8c5227010f5dcb2ef274a0057:-615664066,9d648be80b227010ecacaa7f42a941b2:298183686,ed344be803227010bcc34aa7db70dc27:-1228740748,f6734fa835227010aa12e5acd9b7f90d:1051959046,73618768a722701042c00705c13b4775:-704277239,2351876826227010e7f624828149ea62:-1504393709,abf08f2811227010e788b496341b1f58:1188638599,4aa0cb28042270103cea6fdccb3e2253:-2137101353,73704b281e2270104b8caf96c9c50274:-89123475,10608fe4462270104e06b701462284f3:1188638599,3c5fbae4732270109fa10df2baa624ae:-1133692838,c04fb6e4df22701065ce95562cb6159b:-74048505,14def2e4f8227010bfa4a424e2aa6f2e:-470063552,8e9e32e47822701036bb07da7da4bb5f:-139244167,576eb664392270108f5fdda35709cded:-813736895,6e1ebaa48f227010570d6800cc0c269f:421822196,9dcdf2a4562270107f50d44952fb6425:1137067035,589d72a404227010d946104c6e0aadd2:1535604425,0bdb3ee0c8227010a5685017e1cf36a0:-1026766948,a08b76e0c6227010c35a721b2aad2c59:1423794021,a07bb2e00e2270106f8eefc29efb62e8:-702053033,73eab2a0e62270104da6271c6624f940:-1255969825,08eaf6a021227010b5560057da70e2ef:1025268561,091ab6a0bd2270101c268c66ac9ca242:80834903,f1b9be60c7227010b9a73216a14bcf35:492660031,1aa9be605b22701076cbda952c02ab5c:2126347441,ee79fa60982270106430a48ac2a599a3:273161468,78797e60b42270103c3921089458be54:-1059821416,98697e60d0227010e8d6374a82289e21:-934394842,e029b660ee22701014ed112e5a7b57df:1067287296</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Benutzer anlegen">02d60b6c1b227010a6d7c803604bcba7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 09:54:37</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>37b9a27febaf41e1bfd3df52e01f85f9</sys_id>
+        <sys_metadata>3b3772201b227010a6d7c803604bcb8f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Benutzer anlegen</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_scope_delete display_value="">00ccbce5a6b94bc0a6cfe0c5ed36e440</sys_scope_delete>
+        <sys_update_name>sp_instance_3b3772201b227010a6d7c803604bcb8f</sys_update_name>
+        <sys_update_version display_value="sp_instance_3b3772201b227010a6d7c803604bcb8f">a0960b6c1b227010a6d7c803604bcb78</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 09:54:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
