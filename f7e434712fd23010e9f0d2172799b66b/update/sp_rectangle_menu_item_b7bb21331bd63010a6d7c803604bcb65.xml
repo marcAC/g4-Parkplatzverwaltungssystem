@@ -19,7 +19,7 @@
         <sc_category/>
         <short_description/>
         <sp_page display_value="admin">5adba5ff1b963010a6d7c803604bcb25</sp_page>
-        <sp_rectangle_menu display_value="Parkraumbewirtschaftung menü">0b2a21ff1b963010a6d7c803604bcb41</sp_rectangle_menu>
+        <sp_rectangle_menu/>
         <sp_rectangle_menu_item/>
         <sys_class_name>sp_rectangle_menu_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>

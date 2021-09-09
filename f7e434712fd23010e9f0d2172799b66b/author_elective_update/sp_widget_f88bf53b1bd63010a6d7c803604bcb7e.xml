@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  var c = this;
+	
+c.fahrzeugreg= function(n)
+{
+c.data.Nummernschild=n.Nummernschild;
+c.server.insert.then(function(){
+c.data();
+});
+
+}
+
+		c.fahrzeugdelete=function(n)
+{
+c.data.Nummernschild=n.Nummernschild;
+c.server.delet.then(function(){
+c.data();
+});
+}
+		
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.border{
+			border: 2px solid black;
+}
+.background
+{
+     background-color: #20B2AA ;
+}
+.label
+{
+    font-family:Verdana,Arial,"Lucida Grande","Lucida Sans Unicode",sans-serif;
+    font-size:13px;
+    font-style:normal;
+    font-weight:normal;
+    letter-spacing:normal;
+    margin:3px;
+}
+
+.btn-primary
+{
+ 	background-color: black; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>fahrzeugreg</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Fahrzeug registrieren</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+data.userInfo=[];
+var gr= new GlideRecord('sys_user');
+gr.addQuery('sys_id',gs.getUserID());
+gr.Query();
+while(gr.Next())
+{
+data.userInfo.push({
+Fahrzeughalter:gr.sys_id.toString(),
+Nummernschild:gr.Nummernschild.toString()
+});
+	
+
+}
+//gs.addInomMessage("Name of User"+ datauserInfo[0].Nummernschild);
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-06 20:30:39</sys_created_on>
+        <sys_id>f88bf53b1bd63010a6d7c803604bcb7e</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>Fahrzeug registrieren</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_update_name>sp_widget_f88bf53b1bd63010a6d7c803604bcb7e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-07 09:54:53</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+<div class= "panel-body border background">
+  
+  <div class= "form-group">
+<label class="label">Fahrzeughalter</label>
+    <input class="form-control" readonly ng-repeat= "n in data.UserInfo">
+   </div>
+  
+    <div class= "form-group">
+<label class="label">Nummernschild</label>
+    <input class="form-control" ng-moder="n.Fahzeughalter">
+   </div>
+  
+    <div class= "form-group" >
+    <input type="submit" value="registrieren" class="btn btn-primary" ng-Click="c.fahrzeugreg">
+</div>
+  <div class= "form-group" >
+    <input  type="cancel" value="abbrechen" class="btn btn-primary" >
+   </div>
+  
+  </div>
+</div>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</application>
+        <file_path/>
+        <instance_id>2eded768db8cfc50e03ad7c8f49619dc</instance_id>
+        <instance_name>dev113953</instance_name>
+        <name>sp_widget_f88bf53b1bd63010a6d7c803604bcb7e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {
+  var c = this;
+	
+c.fahrzeugreg= function(n)
+{
+c.data.Nummernschild=n.Nummernschild;
+c.server.insert.then(function(){
+c.data();
+});
+
+}
+
+		c.fahrzeugdelete=function(n)
+{
+c.data.Nummernschild=n.Nummernschild;
+c.server.delet.then(function(){
+c.data();
+});
+}
+		
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.border{
+			border: 2px solid black;
+}
+.background
+{
+     background-color: #20B2AA ;
+}
+.label
+{
+    font-family:Verdana,Arial,"Lucida Grande","Lucida Sans Unicode",sans-serif;
+    font-size:13px;
+    font-style:normal;
+    font-weight:normal;
+    letter-spacing:normal;
+    margin:3px;
+}
+
+.btn-primary
+{
+ 	background-color: black; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;fahrzeugreg&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;Fahrzeug registrieren&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+data.userInfo=[];
+var gr= new GlideRecord('sys_user');
+gr.addQuery('sys_id',gs.getUserID());
+gr.Query();
+while(gr.Next())
+{
+data.userInfo.push({
+Fahrzeughalter:gr.sys_id.toString(),
+Nummernschild:gr.Nummernschild.toString()
+});
+	
+
+}
+//gs.addInomMessage("Name of User"+ datauserInfo[0].Nummernschild);
+	
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-09-06 20:30:39&lt;/sys_created_on&gt;&lt;sys_id&gt;f88bf53b1bd63010a6d7c803604bcb7e&lt;/sys_id&gt;&lt;sys_mod_count&gt;31&lt;/sys_mod_count&gt;&lt;sys_name&gt;Fahrzeug registrieren&lt;/sys_name&gt;&lt;sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra"&gt;f7e434712fd23010e9f0d2172799b66b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="G4-Parkraumbewirtschaftungssystem"&gt;f7e434712fd23010e9f0d2172799b66b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_f88bf53b1bd63010a6d7c803604bcb7e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-09-07 09:54:53&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel panel-default"&gt;
+&lt;div class= "panel-body border background"&gt;
+  
+  &lt;div class= "form-group"&gt;
+&lt;label class="label"&gt;Fahrzeughalter&lt;/label&gt;
+    &lt;input class="form-control" readonly ng-repeat= "n in data.UserInfo"&gt;
+   &lt;/div&gt;
+  
+    &lt;div class= "form-group"&gt;
+&lt;label class="label"&gt;Nummernschild&lt;/label&gt;
+    &lt;input class="form-control" ng-moder="n.Fahzeughalter"&gt;
+   &lt;/div&gt;
+  
+    &lt;div class= "form-group" &gt;
+    &lt;input type="submit" value="registrieren" class="btn btn-primary" ng-Click="c.fahrzeugreg"&gt;
+&lt;/div&gt;
+  &lt;div class= "form-group" &gt;
+    &lt;input  type="cancel" value="abbrechen" class="btn btn-primary" &gt;
+   &lt;/div&gt;
+  
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1599146267</payload_hash>
+        <record_name>Fahrzeug registrieren</record_name>
+        <reverted_from/>
+        <source>b3db70791b563010a6d7c803604bcb8b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-07 09:54:53</sys_created_on>
+        <sys_id>6eb3f4401ba23010a6d7c803604bcb13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bbfae906b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-07 09:54:53</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>a6b3f4402fa23010c55e2e5ce5206913</update_guid>
+        <update_guid_history>a6b3f4402fa23010c55e2e5ce5206913:-1599146267,3f83b440eda23010a7e8e6c13a04466a:-1675057707,bd73b80039a23010e301ce3dc1cdd001:1152309522,40737040a9a23010e3c1538c96816c4f:475733909,6563b440bea23010556739aa3a83c062:-1042409258,7c53bc0080a23010a2931f4e6cce222f:475733909,f943744077a230105d44dfc7ef32c707:1407882705,a403b4cc966230109069f94c7cfec2ca:-482089059,45e27800d3a23010d7f3343ad3054088:475733909,09c2bc0021a23010cbcf1b89e7d40e20:-588553618,4e72b80081a23010ca1c8ec8193faab7:-2030290723,0b52fccc9d6230107de6188483903291:534172681,d92274cc9f623010c251794177709438:-1497811207,b6d1b0ccdf6230105fd4576ea0413a1e:-370988801,95717c8ca0623010403ab60f95537451:-2048725004,ad1174cc346230105b852a8e6a392742:-436959282,3aaeec4c57623010bc3c1c26530851c9:415166813,7fc818848e223010ff39ccad12ad3a28:-436959282,f527caf36f1a301098b4eb1b9528610b:-1603143303,fb88ca37cf1a3010ca72bb16c89d1499:675100037,f527caf36f1a301098b4eb1b9528610b:-1603143303,7307c2f3f61a30106710c2d4bebac08e:-2076787469,ece6c6f3231a3010d1f42c1ee7a240be:-420676144,f6a6c2f39c1a3010bf4288844797fe64:1567692681,4d964ab3b61a3010f6fea92bc7bb8dad:1348902782,8c8646b38c1a3010e6ac6b70652fee8f:38615658,2f6686b3081a30103f90a65040bbfa1f:-2100303531,3eb58ab3bc1a30106e42af71eb5f21a0:-1130753469,39a54ab3611a30103fdce47a90170ca5:781254417,e47546b3671a3010e34ceb19198abc58:639391580,1a6586b3891a30100f5efe12a7571fd8:920558553,ed740abf4bd630109093ba6ea4a942c8:-330180088,dc444a73ff1a3010041c8eaaee196ec4:-1692937791,fdab31fb40d63010d15b1692a4b7e0db:-1296952680</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Fahrzeug registrieren">532e2cf81b667010a6d7c803604bcb0c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 17:26:05</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>02956625abf2492d800984073dcd5f89</sys_id>
+        <sys_metadata>f88bf53b1bd63010a6d7c803604bcb7e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Fahrzeug registrieren</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_scope_delete display_value="">00ccbce5a6b94bc0a6cfe0c5ed36e440</sys_scope_delete>
+        <sys_update_name>sp_widget_f88bf53b1bd63010a6d7c803604bcb7e</sys_update_name>
+        <sys_update_version display_value="sp_widget_f88bf53b1bd63010a6d7c803604bcb7e">6eb3f4401ba23010a6d7c803604bcb13</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 17:26:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

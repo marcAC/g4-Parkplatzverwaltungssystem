@@ -2,7 +2,7 @@
     <sp_instance_link action="INSERT_OR_UPDATE">
         <active>true</active>
         <class_name/>
-        <color>default</color>
+        <color>info</color>
         <css/>
         <glyph>th-list</glyph>
         <id/>
@@ -22,14 +22,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-09 10:26:59</sys_created_on>
         <sys_id>544e4b641b627010a6d7c803604bcb0e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Alle Reservierung anzeigen</sys_name>
         <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
         <sys_policy/>
         <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
         <sys_update_name>sp_instance_link_544e4b641b627010a6d7c803604bcb0e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-09 10:29:22</sys_updated_on>
+        <sys_updated_on>2021-09-09 18:02:45</sys_updated_on>
         <title>Alle Reservierung anzeigen</title>
         <type>url</type>
         <url>/pp?id=form&amp;table=x_684800_g4_parkra_reservierung</url>

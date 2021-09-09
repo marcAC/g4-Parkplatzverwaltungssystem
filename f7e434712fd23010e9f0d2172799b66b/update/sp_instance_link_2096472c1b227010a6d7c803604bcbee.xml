@@ -2,7 +2,7 @@
     <sp_instance_link action="INSERT_OR_UPDATE">
         <active>true</active>
         <class_name/>
-        <color>default</color>
+        <color>info</color>
         <css/>
         <glyph>user</glyph>
         <id/>
@@ -22,14 +22,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-09 09:53:25</sys_created_on>
         <sys_id>2096472c1b227010a6d7c803604bcbee</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Benutzer anlegen</sys_name>
         <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
         <sys_policy/>
         <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
         <sys_update_name>sp_instance_link_2096472c1b227010a6d7c803604bcbee</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-09 10:21:09</sys_updated_on>
+        <sys_updated_on>2021-09-09 18:02:16</sys_updated_on>
         <title>Benutzer anlegen</title>
         <type>url</type>
         <url>/pp?id=form&amp;table=sys_user&amp;sys_id=-1</url>

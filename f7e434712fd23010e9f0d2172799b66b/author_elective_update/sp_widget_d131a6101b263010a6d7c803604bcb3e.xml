@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($rootScope,$scope, $timeout) {
+  var c = this;
+	
+	c.selectedPill='fahrzeugreg';
+	
+	$timeout(function(){
+		$rootscope.$broadcast('showHideWidget','fahrzeug');
+			},500);
+	
+	$scope.selectPill=function(selection){
+		c.selectedPill=selection;
+		$rootscope.broadcast('showHideWidget', selection);
+	};
+	
+		
+	}
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.vertical-menu
+{
+width: 200px;
+}
+
+.vertical-menu a{
+background-color: #20B2AA;
+  color:#ffffff;
+  display:block;
+  padding:12px;
+}
+
+.vertical-menu a:hover{
+background-color: black;
+}
+
+.vertical-menu a:active{
+background-color: #20B2AA;
+  color: whight;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>listofmenu_personal</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>ListofMenu_personal</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-08 12:31:42</sys_created_on>
+        <sys_id>d131a6101b263010a6d7c803604bcb3e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>ListofMenu_personal</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_update_name>sp_widget_d131a6101b263010a6d7c803604bcb3e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-08 12:44:10</sys_updated_on>
+        <template><![CDATA[<div class="vertical-menu">
+<a href class="each-pill" ng-class="{'active : '')" ng-click="selectPill('')">Fahrzeuge registrieren</a>
+<a href class="each-pill" ng-class="{'active :'parkzonedatatable'}" ng-click="selectPill('parkzonedatatable')">Meine Fahrzeuge anzeigen</a>
+<a href class="each-pill" ng-class="{'active : ''}" ng-click="selectPill('')">Parkplatz resevieren</a>
+<a href class="each-pill" ng-class="{'active : ''}" ng-click="selectPill('')">Alle Resevierung anzeigen</a>
+
+</div>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</application>
+        <file_path/>
+        <instance_id>2eded768db8cfc50e03ad7c8f49619dc</instance_id>
+        <instance_name>dev113953</instance_name>
+        <name>sp_widget_d131a6101b263010a6d7c803604bcb3e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function($rootScope,$scope, $timeout) {
+  var c = this;
+	
+	c.selectedPill='fahrzeugreg';
+	
+	$timeout(function(){
+		$rootscope.$broadcast('showHideWidget','fahrzeug');
+			},500);
+	
+	$scope.selectPill=function(selection){
+		c.selectedPill=selection;
+		$rootscope.broadcast('showHideWidget', selection);
+	};
+	
+		
+	}
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.vertical-menu
+{
+width: 200px;
+}
+
+.vertical-menu a{
+background-color: #20B2AA;
+  color:#ffffff;
+  display:block;
+  padding:12px;
+}
+
+.vertical-menu a:hover{
+background-color: black;
+}
+
+.vertical-menu a:active{
+background-color: #20B2AA;
+  color: whight;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;listofmenu_personal&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;ListofMenu_personal&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-09-08 12:31:42&lt;/sys_created_on&gt;&lt;sys_id&gt;d131a6101b263010a6d7c803604bcb3e&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;ListofMenu_personal&lt;/sys_name&gt;&lt;sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra"&gt;f7e434712fd23010e9f0d2172799b66b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="G4-Parkraumbewirtschaftungssystem"&gt;f7e434712fd23010e9f0d2172799b66b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_d131a6101b263010a6d7c803604bcb3e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-09-08 12:44:10&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="vertical-menu"&gt;
+&lt;a href class="each-pill" ng-class="{'active : '')" ng-click="selectPill('')"&gt;Fahrzeuge registrieren&lt;/a&gt;
+&lt;a href class="each-pill" ng-class="{'active :'parkzonedatatable'}" ng-click="selectPill('parkzonedatatable')"&gt;Meine Fahrzeuge anzeigen&lt;/a&gt;
+&lt;a href class="each-pill" ng-class="{'active : ''}" ng-click="selectPill('')"&gt;Parkplatz resevieren&lt;/a&gt;
+&lt;a href class="each-pill" ng-class="{'active : ''}" ng-click="selectPill('')"&gt;Alle Resevierung anzeigen&lt;/a&gt;
+
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>859052883</payload_hash>
+        <record_name>ListofMenu_personal</record_name>
+        <reverted_from/>
+        <source>b3db70791b563010a6d7c803604bcb8b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-08 12:44:10</sys_created_on>
+        <sys_id>88146a901b263010a6d7c803604bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17bc56fe7f00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-08 12:44:10</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>c0146a906026301075c0cbe7533c57fd</update_guid>
+        <update_guid_history>c0146a906026301075c0cbe7533c57fd:859052883,cba3a290e9263010f760de69c30bf52f:127356685,7112a610d4263010c27d9872266cf772:1871996933,8e022a10a0263010d271573a6d81b792:207539062,da41e210ee263010ee169ff44089bfe1:902281139,dd31a61041263010935525bb2ad8bf3f:-1263893851</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="ListofMenu_personal">5f2e2cf81b667010a6d7c803604bcb03</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 17:26:05</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>0d13e158bfc34d1abe6aae0e72c2a104</sys_id>
+        <sys_metadata>d131a6101b263010a6d7c803604bcb3e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ListofMenu_personal</sys_name>
+        <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
+        <sys_scope_delete display_value="">00ccbce5a6b94bc0a6cfe0c5ed36e440</sys_scope_delete>
+        <sys_update_name>sp_widget_d131a6101b263010a6d7c803604bcb3e</sys_update_name>
+        <sys_update_version display_value="sp_widget_d131a6101b263010a6d7c803604bcb3e">88146a901b263010a6d7c803604bcbfd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 17:26:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
