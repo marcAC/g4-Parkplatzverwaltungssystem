@@ -191,7 +191,7 @@
         <update_guid_history>29ea2ed49f263010007c8a7f7c4cf161:1766068424,54da6214dd2630106d58090410a2814c:-165431054</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Fahrzeuge Data Table">8f2ee8f81b667010a6d7c803604bcb87</sys_audit_delete>
+        <sys_audit_delete display_value="">8f2ee8f81b667010a6d7c803604bcb87</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-09 17:26:04</sys_created_on>

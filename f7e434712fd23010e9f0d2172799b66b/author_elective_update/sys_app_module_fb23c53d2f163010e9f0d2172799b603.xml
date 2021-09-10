@@ -67,7 +67,7 @@
         <update_guid_history>6ce20cfa8c127010854f2e467115f31f:552678534,32d2403eca127010ab82e6e26e806996:801359962,a2887be2e912701033e2c2140ba71c67:0,a719da52d0523010de8bcd0d55aab6c4:-1447494922</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="">2004807e2f127010d36d5ff62799b64b</sys_audit_delete>
+        <sys_audit_delete display_value="Melde ein Fahrzeug dem System">2004807e2f127010d36d5ff62799b64b</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-03 09:14:00</sys_created_on>

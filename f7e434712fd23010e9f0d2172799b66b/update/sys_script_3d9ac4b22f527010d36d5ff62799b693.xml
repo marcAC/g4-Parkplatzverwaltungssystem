@@ -64,6 +64,12 @@
 		rolle.next();
 		role.setValue('role', rolle.getValue('sys_id'));
 	}
+	else if (current.getValue('x_684800_g4_parkra_rolle') == 'Administrator'){
+		rolle.addQuery('name', 'x_684800_g4_parkra.administrator');
+		rolle.query();
+		rolle.next();
+		role.setValue('role', rolle.getValue('sys_id'));
+	}
 	
 	role.insert();
 
@@ -74,7 +80,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3d9ac4b22f527010d36d5ff62799b693</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>User has role</sys_name>
         <sys_overrides/>
         <sys_package display_value="G4-Parkraumbewirtschaftungssystem" source="x_684800_g4_parkra">f7e434712fd23010e9f0d2172799b66b</sys_package>
@@ -82,7 +88,7 @@
         <sys_scope display_value="G4-Parkraumbewirtschaftungssystem">f7e434712fd23010e9f0d2172799b66b</sys_scope>
         <sys_update_name>sys_script_3d9ac4b22f527010d36d5ff62799b693</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-03 10:57:42</sys_updated_on>
+        <sys_updated_on>2021-09-10 12:04:45</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
