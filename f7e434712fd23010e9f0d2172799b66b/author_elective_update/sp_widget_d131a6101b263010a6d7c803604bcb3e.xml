@@ -153,7 +153,7 @@ background-color: #20B2AA;
         <update_guid_history>c0146a906026301075c0cbe7533c57fd:859052883,cba3a290e9263010f760de69c30bf52f:127356685,7112a610d4263010c27d9872266cf772:1871996933,8e022a10a0263010d271573a6d81b792:207539062,da41e210ee263010ee169ff44089bfe1:902281139,dd31a61041263010935525bb2ad8bf3f:-1263893851</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="">5f2e2cf81b667010a6d7c803604bcb03</sys_audit_delete>
+        <sys_audit_delete display_value="ListofMenu_personal">5f2e2cf81b667010a6d7c803604bcb03</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-09 17:26:05</sys_created_on>

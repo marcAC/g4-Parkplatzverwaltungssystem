@@ -51,7 +51,7 @@
         <update_guid_history>10da24782e66701066fc2fa6bab69319:1996388909,b80aa8f4c766701090341efbf879d739:702233612</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="">49da20781b667010a6d7c803604bcbc3</sys_audit_delete>
+        <sys_audit_delete display_value="keinzugriff - Container 2">49da20781b667010a6d7c803604bcbc3</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-09 17:11:27</sys_created_on>

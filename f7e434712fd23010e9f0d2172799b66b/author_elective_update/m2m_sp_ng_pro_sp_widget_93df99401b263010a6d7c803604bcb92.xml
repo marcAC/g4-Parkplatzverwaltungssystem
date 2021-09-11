@@ -41,7 +41,7 @@
         <update_guid_history>17df9940cb2630103b7e85780aaecd94:-850406355</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="">459f85501b223010a6d7c803604bcb2c</sys_audit_delete>
+        <sys_audit_delete display_value="spAttachmentManager.test">459f85501b223010a6d7c803604bcb2c</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-08 06:35:03</sys_created_on>

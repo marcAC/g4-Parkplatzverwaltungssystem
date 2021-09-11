@@ -63,7 +63,7 @@
         <update_guid_history>250f0ba4cc627010b8a2b7653ca18c0c:2087125100,a40fc7a40862701081a2d4b4ff0fa1df:1051842699,5c4e4b64336270109e0973107ba50bbf:16560298,6d0ec7641a627010b0b8fe4ed1315504:1051842699,09ad43641f627010cbcb18be2593f3f4:2087125100,729d436436627010e574faeebc64e955:-1172559795,9d9d0364916270109d907a51a11a43d8:2087125100,bf8d0364b1627010250958c34dfbb598:-1172559795,e17dcf245a627010bad5967875029e65:2087125100,1039c7607c62701082989fbc71cc488c:-1172559795,cad60f6c2b22701092f04335f409846c:-137277394,20960b6cd8227010de44ad0ca649ba92:-1172559795,f04036e8f4ee3010863b99083bee7b6f:898005007,42ccaa28a7ee3010d9dcdd3639ea1035:1104661282,0bbc6a28e8ee30107bfeaeceeed3bd9f:-636879805</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="">8e0fc7a41b627010a6d7c803604bcbfe</sys_audit_delete>
+        <sys_audit_delete display_value="Reservierung">8e0fc7a41b627010a6d7c803604bcbfe</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-09 10:30:24</sys_created_on>

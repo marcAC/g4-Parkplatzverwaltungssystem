@@ -183,7 +183,7 @@
         <update_guid_history>9eea31fb07d63010290c04e7a4509ab9:1373452011,3b88ca37801a3010e4e771ca32add368:-147192329,9eea31fb07d63010290c04e7a4509ab9:1373452011</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="">0fafc5501b223010a6d7c803604bcbc6</sys_audit_delete>
+        <sys_audit_delete display_value="Copy of Data Table from Instance Definit">0fafc5501b223010a6d7c803604bcbc6</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-08 06:35:28</sys_created_on>
