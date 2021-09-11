@@ -51,7 +51,7 @@
         <update_guid_history>b969776429e27010ab913eb028a8dfeb:1284389213</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="HomePage - Container 1">e8c689951b223010a6d7c803604bcb76</sys_audit_delete>
+        <sys_audit_delete display_value="">e8c689951b223010a6d7c803604bcb76</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-11 08:30:26</sys_created_on>

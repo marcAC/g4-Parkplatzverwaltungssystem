@@ -42,7 +42,7 @@
         <update_guid_history>cecca7def016301054ecc7f93fdccc3c:157124774</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="">96cca7de2f163010d36d5ff62799b66c</sys_audit_delete>
+        <sys_audit_delete display_value="x_684800_g4_parkra_user.x_684800_g4_parkra.gast">96cca7de2f163010d36d5ff62799b66c</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-02 12:54:03</sys_created_on>

@@ -63,7 +63,7 @@
         <update_guid_history>ab8a2ea45fee3010bebc96c9e29123cf:1618168987,80eb9ea8f4ae3010ba99955b202ec6a9:0,2a938b58c66630102e51a04e81c93ad9:1902758699,81734b584c66301032073dd9ad144931:1715700064,b8bca258d1263010749c6a980183d2c5:1902758699,42ace258d126301019d9e80f94def5c2:-1703869657,a99c2e1831263010f4ef01c8757082fc:2066369845,14a52ed09d26301028e3aedc41d64608:-313228329,1362421854a23010c10c2a4ead38f700:-124374708,8b324218b0a23010dbd60474c5af749a:-806874607,d8128ed45ca230100566e71e6c3c24fc:-1098208993</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Parkzone">457b6ae41bee3010a6d7c803604bcbfc</sys_audit_delete>
+        <sys_audit_delete display_value="">457b6ae41bee3010a6d7c803604bcbfc</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-09 07:54:57</sys_created_on>

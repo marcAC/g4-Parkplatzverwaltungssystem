@@ -65,7 +65,7 @@
         <update_guid_history>4dc4c87ef512701065ceb997447d95f1:0,1319da520a523010527569c0b353e3b1:-1803859442</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="">9d0500be2f127010d36d5ff62799b618</sys_audit_delete>
+        <sys_audit_delete display_value="Zeige die Parkzonen an">9d0500be2f127010d36d5ff62799b618</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-03 09:18:25</sys_created_on>

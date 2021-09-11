@@ -1335,7 +1335,7 @@
         <update_guid_history>1ff065806826301022a13bd463362c8b:-835057122,d4f0ad805d2630105e15d64ca8d515bc:-409085832,68e0ad804d263010c34a4150f5a1a6e7:-835057122,8910658082263010a148d144369f4d7b:-1603023115,93df9940e42630100cbfcfd180a7e791:-226966708</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="test">059f85501b223010a6d7c803604bcb3c</sys_audit_delete>
+        <sys_audit_delete display_value="">059f85501b223010a6d7c803604bcb3c</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-08 06:35:04</sys_created_on>
