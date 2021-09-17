@@ -80,7 +80,7 @@
         <update_guid_history>df19da523252301011c3483ef1136486:1814103659</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Parkraumbewirtschaftungssystem">4dc4c87e2f127010d36d5ff62799b6f6</sys_audit_delete>
+        <sys_audit_delete display_value="">4dc4c87e2f127010d36d5ff62799b6f6</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-03 09:17:18</sys_created_on>

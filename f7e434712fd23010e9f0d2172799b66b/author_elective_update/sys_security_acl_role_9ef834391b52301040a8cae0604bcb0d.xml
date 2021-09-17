@@ -60,7 +60,7 @@
         <update_guid_history>584565f96996301025b76be255b6043f:0,7614a1b967963010cd9eacc8a4d095c4:-1809172054,c0b3e9790e963010b76be241d415cd2e:0,0f33a179259630107a9617fe547c380c:984695306,da29bc3546163010c960371b35e6d5d5:-1871346957</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="">f6cfdb4a2f967010e9f0d2172799b605</sys_audit_delete>
+        <sys_audit_delete display_value="x_684800_g4_parkra_user.x_684800_g4_parkra.administrator">f6cfdb4a2f967010e9f0d2172799b605</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-01 17:18:49</sys_created_on>

@@ -42,7 +42,7 @@
         <update_guid_history>27ec2bdefb163010c20f0a5d5537c943:-1365939720</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_684800_g4_parkra_reservierung.x_684800_g4_parkra.mitarbeiter">2cdd67122f563010d36d5ff62799b633</sys_audit_delete>
+        <sys_audit_delete display_value="">2cdd67122f563010d36d5ff62799b633</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-02 12:58:34</sys_created_on>

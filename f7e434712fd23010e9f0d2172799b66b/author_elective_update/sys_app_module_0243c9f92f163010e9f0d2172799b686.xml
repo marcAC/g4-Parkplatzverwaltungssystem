@@ -67,7 +67,7 @@
         <update_guid_history>49c4c87e8f1270109beb71f0af1f4eeb:0,1f19da52ba5230105911cfa6e179318b:-242202192</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Erstelle eine Reservierung">16d4887e2f127010d36d5ff62799b6ee</sys_audit_delete>
+        <sys_audit_delete display_value="">16d4887e2f127010d36d5ff62799b6ee</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-03 09:17:40</sys_created_on>
