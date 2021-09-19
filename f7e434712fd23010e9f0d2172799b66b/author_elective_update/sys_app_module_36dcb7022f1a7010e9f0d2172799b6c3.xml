@@ -65,7 +65,7 @@
         <update_guid_history>ce13403e9612701043a06b9194a66472:1229615171,ce13403e9612701043a06b9194a66472:1229615171,23f2803e631270100a7efa37a33f5de9:-1711300690,c6ccfba605127010816e39c6be28d24b:-303758868,8c30c07a961270107a7ba4fd5c2fe9e9:0,c6ccfba605127010816e39c6be28d24b:-303758868,d2887be232127010c1c2aebd80b80c4c:0,e7bcf31eeb5630108021c5e28709c304:-303758868,9b19da52be523010cf5a8fe9a1d8be8e:-1113964248</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="">6bf4cc7e2f127010d36d5ff62799b6d1</sys_audit_delete>
+        <sys_audit_delete display_value="Zeige alle ServiceNow Nutzer an">6bf4cc7e2f127010d36d5ff62799b6d1</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-03 09:18:18</sys_created_on>

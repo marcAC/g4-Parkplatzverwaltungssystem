@@ -42,7 +42,7 @@
         <update_guid_history>1e15a35a7516301064ae11ba3c554cc0:1315516582</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="">b5a7507e2f527010d36d5ff62799b63f</sys_audit_delete>
+        <sys_audit_delete display_value="x_684800_g4_parkra_fahrzeug.x_684800_g4_parkra.mitarbeiter">b5a7507e2f527010d36d5ff62799b63f</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-03 10:39:49</sys_created_on>
